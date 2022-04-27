@@ -1,0 +1,27 @@
+@use "global" as *;
+
+.c-header-nav {
+    display: flex;
+
+    .c-header-nav__item {
+        padding-right: rem(15);
+        padding-left: rem(15);
+        display: block;
+        transition: ease 0.8s;
+
+        &:not(:last-child){
+            border-right: 1px solid $black;
+        }
+
+
+        &:hover {
+            color: $base;
+        }
+
+        a {
+            // display: inline-block;
+            // padding-right: rem(15);
+            // padding-left: rem(15);
+        }
+    }
+}

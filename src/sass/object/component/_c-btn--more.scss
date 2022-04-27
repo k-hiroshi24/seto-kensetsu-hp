@@ -1,0 +1,42 @@
+@use "global" as *;
+
+.c-btn--more {
+	// padding-top: rem(8);
+	// padding-bottom: rem(8);
+	// padding-left: rem(35);
+	//  padding-right: rem(5);
+	max-width: rem(120);
+	width: 100%;
+	color: $black;
+	position: relative;
+	display: inline-block;
+
+	&::before {
+		content: "";
+		position: absolute;
+		background-image: url(/images/common/btn-arrow-black.png);
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: contain;
+		width: rem(35);
+		height: rem(15);
+		top: 20%;
+		right: -5%;
+	}
+
+	&::after {
+		position: absolute;
+		bottom: -4px;
+		left: 0;
+		content: "";
+		width: 100%;
+		height: 1px;
+		background: $black;
+		transform: scale(0, 1);
+		transform-origin: left top;
+		transition: transform 0.3s;
+	}
+	&:hover::after {
+		transform: scale(1, 1);
+	}
+}

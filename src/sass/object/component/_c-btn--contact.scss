@@ -1,0 +1,35 @@
+@use "global" as *;
+
+.c-btn--contact {
+    padding-top: rem(54);
+    padding-bottom: rem(24);
+    padding-left: rem(15);
+    padding-right: rem(15);
+    color: $white;
+    background-color: $base;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    font-size: rem(11);
+    opacity: 1;
+    transition: all ease 0.6s;
+
+    &:hover{
+        opacity: 0.8;
+    }
+
+    &:after {
+        content: "";
+        position: absolute;
+        background-image: url(/images/common/mail-img.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        width: rem(24);
+        height: rem(20);
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-80%);
+        // display: inline-block;
+    }
+}

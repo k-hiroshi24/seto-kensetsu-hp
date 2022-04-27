@@ -1,16 +1,24 @@
 <!DOCTYPE html>
 <html lang="ja">
 <%- include('./common/_head') %>
+
   <body>
-    <%- include('./common/_top-header') %>
+    <!-- <%- include('./common/_top-header') %>
       <%- include('./component/_c-btn',{text:'これはテストです', link:'#'}) %>
     <%- include('./common/_footer') %>
 
 
     <% for (var i=0; i < 4; i++) { %>
       <%- include('./component/_c-btn',{text:'これはテストです', link:'#'}) %>
-      <% } %>
+      <% } %> -->
 
-
+    <%- include('./component/_c-btn',{text:'採用情報ページ',link:'recruit.html'}) %>
+      <%- include('./component/_c-btn--contact',{text:'Contact',link:'contact.html'}) %>
+        <%- include('./component/_c-header-nav')%>
+          <%- include('./component/_c-section-title',{egTitle:'About us',jaTitle:'瀬戸建設について'}) %>
+          <%- include('./component/_c-btn--more',{text:'Read More',link:'contact.html'}) %>
   </body>
+
+
+
 </html>
