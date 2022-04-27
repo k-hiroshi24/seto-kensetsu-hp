@@ -1,0 +1,26 @@
+@use "global" as *;
+
+.c-btn--white {
+  padding-top: rem(8);
+  padding-bottom: rem(8);
+  padding-left: rem(35);
+  padding-right: rem(70);
+  color: $white;
+  border: 1px solid $white;
+  border-radius: rem(15);
+  position: relative;
+  display: inline-block;
+
+  &::after{
+    content: "";
+    position: absolute;
+    background-image: url(/images/common/btn-arrow-type02.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: rem(35);
+    height: rem(15);
+    top: rem(20);
+    right: rem(30);
+    
+  }
+}

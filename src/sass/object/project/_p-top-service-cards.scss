@@ -1,0 +1,65 @@
+@use "global" as *;
+
+.p-top-service-cards {
+    display: flex; 
+    justify-content: space-between; 
+    font-family: $second-font-family;
+
+    .p-top-service-card {
+        width: 32%;
+    }
+
+    .p-top-service-card__img {
+
+        img{
+            
+        }
+    }
+    .p-top-service-card__content {
+        background-color: rgba(0, 147, 130, 0.58);
+        color: $white;
+        padding: rem(42) rem(20) rem(48) rem(20);
+    }
+    .p-top-service-card__icon {
+        width: rem(30);
+        height: auto;
+        margin: 0 auto rem(24);
+    }
+    .p-top-service-card__title {
+        font-size: rem(22);
+        text-align: center;
+        margin-bottom: rem(24);
+    }
+    ul {
+        width: 80%;
+        margin: 0 auto;
+        font-size: rem(17);
+
+        li {
+            position: relative;  
+
+            &::before{
+                content:  "";     
+                width:  6px;              
+                height:  6px;             
+                display:  inline-block;    
+                background-color: $base; 
+                border-radius:  50%;  
+                position: absolute;
+                top: 50%;
+                left: -12px;
+            
+        
+
+            }  
+
+            &:not(:last-child) {
+                margin-bottom: rem(10);
+            }
+        }
+    }
+    .button {
+        text-align: center;
+        margin-top: rem(35);
+    }
+}
