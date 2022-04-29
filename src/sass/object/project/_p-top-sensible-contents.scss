@@ -1,0 +1,34 @@
+@use "global" as *;
+.p-top-sensible-contents {
+    display: flex;
+    justify-content: space-between;
+
+    .p-top-sensible-content {
+        width: 32%;
+    }
+
+    .p-top-sensible-img {
+        width: 100%;
+        position: relative;
+        padding-top: 67.65%;
+
+        img {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .p-top-sensible-img__title {
+        text-align: center;
+        margin-top: rem(-35);
+        position: relative;
+        font-family: $second-font-family;
+        span {
+            color: $second-color;
+            font-size: rem(55);
+        }
+    }
+}

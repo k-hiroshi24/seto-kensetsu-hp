@@ -1,8 +1,8 @@
 @use "global" as *;
 
-.c-btn--more {
+.c-btn--more-white {
 	// max-width: rem(200);
-	color: $black;
+	color: $white;
 	position: relative;
 	display: inline-block;
 
@@ -10,7 +10,7 @@
 	&::before {
 		content: "";
 		position: absolute;
-		background-image: url(/images/common/btn-arrow-black.png);
+		background-image: url(/images/common/btn-arrow-type.png);
 		background-repeat: no-repeat;
 		background-position: center;
 		background-size: contain;
@@ -27,7 +27,7 @@
 		content: "";
 		width: 120px;
 		height: 1px;
-		background: $black;
+		background: $white;
 		transform: scale(0, 1);
 		transform-origin: left top;
 		transition: transform 0.3s;
