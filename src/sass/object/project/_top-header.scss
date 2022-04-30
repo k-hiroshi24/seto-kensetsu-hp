@@ -1,0 +1,35 @@
+@use "global" as *;
+.p-top-header {
+    &__inner {
+        width: 100%;
+        display: flex;
+        padding-left: $padding-pc;
+
+        align-items: center;
+    }
+    &__logo {
+        width: rem(40);
+        padding-right: rem(10);
+    }
+    &__company-name {
+        font-size: rem(22);
+        font-weight: $bold;
+        padding-right: rem(20);
+
+        span {
+            font-size: rem(18);
+            padding-right: rem(10);
+        }
+    }
+    &__adress {
+        span {
+            font-size: rem(13);
+            padding-right: rem(10);
+        }
+    }
+    &__nav {
+        margin-left: auto;
+    }
+    &__btn {
+    }
+}

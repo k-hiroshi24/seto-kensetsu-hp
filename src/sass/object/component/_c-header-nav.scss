@@ -2,17 +2,16 @@
 
 .c-header-nav {
     display: flex;
-
+    font-size: rem(12);
     .c-header-nav__item {
         padding-right: rem(15);
         padding-left: rem(15);
         display: block;
         transition: ease 0.8s;
 
-        &:not(:last-child){
+        &:not(:last-child) {
             border-right: 1px solid $black;
         }
-
 
         &:hover {
             color: $base;

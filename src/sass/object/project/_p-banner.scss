@@ -1,0 +1,46 @@
+@use "global" as *;
+.p-banner {
+    display: flex;
+    
+    &__wrap {
+        text-align: center;
+        position: relative;;
+        width: 50%;
+        padding-top: 15%;
+
+        &::before{
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color:rgba(79,61,34,0.4);
+            top: 0;
+            left: 0;
+            z-index: 1;
+        
+        }
+        img {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+
+        }
+        p {
+            font-size: rem(22);
+            color: $white;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            border: 1px solid $white;
+            padding: rem(25) rem(35);
+            z-index: 2;
+            span {
+                display: block;
+                font-size: rem(12);
+            }
+        }
+    }
+}
