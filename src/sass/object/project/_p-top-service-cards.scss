@@ -5,14 +5,18 @@
     justify-content: space-between;
     font-family: $second-font-family;
 
-    .p-top-service-card{
+    .p-top-service-card {
         width: 32%;
+        height: 100%;
+
+        
     }
 
     .p-top-service-card__img {
         position: relative;
         width: 100%;
         padding-top: 67.64%;
+        
 
         img {
             position: absolute;
@@ -26,13 +30,14 @@
         background-color: rgba(0, 147, 130, 0.58);
         color: $white;
         padding: rem(42) rem(20) rem(48) rem(20);
+    
     }
     .p-top-service-card__icon {
         width: rem(50);
         height: rem(40);
-        margin: 0 auto rem(24); 
+        margin: 0 auto rem(24);
 
-        img{
+        img {
             width: 100%;
             height: 100%;
         }
@@ -45,8 +50,9 @@
     }
     ul {
         width: 80%;
-        margin: 0 auto;
-        font-size: rem(17);
+        height: 100px;
+        margin: 0 auto ;
+        font-size: rem(12);
 
         li {
             position: relative;

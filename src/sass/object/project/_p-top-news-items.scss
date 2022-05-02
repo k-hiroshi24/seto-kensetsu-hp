@@ -1,1 +1,33 @@
 @use "global" as *;
+.p-top-news-items{
+
+    .p-top-news-item{
+        display: flex;
+        justify-content: center;
+        letter-spacing: 0.24rem;
+        margin-bottom: rem(35);
+        
+        span{
+            
+        }
+        
+        &__date{
+            width: rem(140);
+            text-align: center;
+            border-bottom: 1px solid $black;
+            margin-right: rem(50);
+
+
+    }
+    &__title{
+        margin-right: rem(50);
+        border-bottom: 1px solid $black;
+
+
+    }
+    &__more{
+        border-bottom: 1px solid $black;
+
+    }
+}
+}

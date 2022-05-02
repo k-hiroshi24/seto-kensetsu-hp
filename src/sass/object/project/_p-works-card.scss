@@ -1,10 +1,11 @@
 @use "global" as *;
 .p-works-cards {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: rem(25);
 
     .p-works-card__content {
-        width: 23%;
+        // width: 23%;
     }
 
     .p-works-card__img {
@@ -26,7 +27,6 @@
         position: relative;
         font-size: rem(14);
         display: flex;
-        justify-content: center;
         letter-spacing: 0.16em;
         margin-bottom: rem(10);
         font-family: $second-font-family;
@@ -38,7 +38,6 @@
         }
     }
     .p-works-card__subtitle {
-        text-align: center;
         font-size: rem(13);
         letter-spacing: 0.16em;
         margin-bottom: rem(20);

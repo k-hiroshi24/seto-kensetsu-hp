@@ -1,0 +1,23 @@
+@use "global" as *;
+.p-top-news{
+    background-color: $bg;
+    padding-top: rem(75);
+    padding-bottom: rem(95);
+    
+    &__inner{
+        
+    }
+    &__title{
+        text-align: center;
+        margin-bottom: rem(50);
+
+    }
+    &__item{
+
+    }
+    &__btn{
+        text-align: center;
+
+    }
+
+}

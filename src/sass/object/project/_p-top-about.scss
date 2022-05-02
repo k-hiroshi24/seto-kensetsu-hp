@@ -1,0 +1,49 @@
+@use "global" as *;
+.p-top-about {
+    display: flex;
+    align-items: center;
+
+    &__img {
+        width: 50vw;
+        position: relative;
+        padding-top: 36%;
+
+        img {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    &__content {
+        width: 50vw;
+        margin-top:7vw;
+    }
+    &__title {
+        text-align: center;
+        margin-bottom: 36px;
+    }
+    &__sub-title {
+        text-align: center;
+        font-size: 1.7vw;
+    }
+    &__text {
+        padding-left: 80px;
+        padding-top: 50px;
+        background-color: $white;
+        position: relative;
+        left: -80px;
+        bottom: 0;
+        z-index: 100;
+        p {
+            padding-bottom: 30px;
+            font-size: 1vw;
+        }
+    }
+
+    &__btn {
+        text-align: center;
+        // padding-bottom: 50px;
+    }
+}

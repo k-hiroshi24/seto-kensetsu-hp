@@ -1,0 +1,109 @@
+@use "global" as *;
+
+.p-mv {
+
+    &__inner {
+        // display:flex;
+        // grid-template-columns: 1fr;
+        // grid-template-rows: auto;
+        // grid-gap: 32px 0;
+        position: relative;
+    }
+
+    &__slider {
+    }
+
+    &__slider-img {
+        width: 80%;
+        margin-left: auto;
+
+        img {
+        }
+        
+    }
+
+    &__title {
+        // width: 27%;
+        position: absolute;
+        // position: absolute;
+        z-index: 100;
+        top: 4vw;
+        left: 10vw;
+
+        h2 {
+            writing-mode: vertical-rl;
+            font-size: 2.5vw;
+            font-weight: $normal;
+            letter-spacing: 0.29em;
+            line-height: 1.92;
+        }
+
+        span {
+            color: $white;
+        }
+    }
+
+    &__recruit {
+        width: 40%;
+        // max-width: 80%;
+        padding-bottom: 30px;
+        padding-right: 20px;
+        padding-left: 20px;
+        position: absolute;
+        bottom: 0;
+        left: 10vw;
+        z-index: 100;
+        background-color: $white;
+    }
+    &__recruit-en-title {
+        font-size: 2vw;
+        color: $base;
+        margin-bottom: rem(15);
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+            width: 80%;
+            height: 1px;
+            background-color: $black;
+            top: 50%;
+            right: -10px;
+        }
+    }
+    &__recruit-ja-title {
+        font-size: 2.3vw;
+        margin-bottom: rem(10);
+    }
+
+    &__recruit-text {
+        font-size: 1vw;
+        margin-bottom: rem(20);
+    }
+    &__recruit-btn {
+        text-align: center;
+    }
+}
+// @keyframes zoomUp {
+//     0% {
+//         transform: scale(1);
+//     }
+//     100% {
+//         transform: scale(1.15);
+//     }
+// }
+
+// .swiper-slide-active .p-mv-slider__content,
+// .swiper-slide-duplicate-active .p-mv-slider__contents,
+// .swiper-slide-prev .p-mv-slider__content {
+//     animation: zoomUp 10s linear 0s 1 normal both;
+// }
+// .p-mv-slider__content img {
+//     display: block;
+// }
+// .swiper-pagination-bullet {
+//     background: #c4c4c4;
+// }
+// .swiper-pagination-bullet-active {
+//     background: #f9f871;
+// }
