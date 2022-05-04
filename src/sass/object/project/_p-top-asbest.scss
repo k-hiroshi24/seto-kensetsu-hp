@@ -28,6 +28,21 @@
         padding-top: 20px;
         margin-bottom: rem(25);
         letter-spacing: 0.05em;
+        position: relative;
+
+        &::before{
+            content: "";
+            position: absolute;
+            background-image: url(../images/common/asbest-icon.png);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 70px;
+            height: 70px;
+            top: -20px;
+            left: 265px;
+            
+        }
 
         span {
             font-size: rem(27);

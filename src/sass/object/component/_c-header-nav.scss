@@ -1,16 +1,19 @@
 @use "global" as *;
 
 .c-header-nav {
-    display: flex;
-    align-items: center;
-    font-size: rem(12);
-
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        font-size: rem(12);
+    }
 
     &__item {
         padding-right: rem(15);
         padding-left: rem(15);
         display: block;
         transition: ease 0.8s;
+        position: relative;
 
         &:not(:last-child) {
             border-right: 1px solid $black;
@@ -21,9 +24,58 @@
         }
 
         a {
-            height: inherit;
+            padding-right: rem(15);
+            padding-left: rem(15);
             cursor: pointer;
         }
     }
 
+    // ドロップダウンメニュー
+    &__child {
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            align-items: stretch;
+        }
+
+        background-color: rgb(239 239 239);
+        color: $base;
+        padding: 30px;
+        width: 50vw;
+        position: absolute;
+        top: 6.8vh;
+        left: -23.43vw;
+        z-index: 100;
+        box-shadow: 0 0 8px gray;
+        // display: none;
+    }
+
+    &__child-title {
+        p {
+            font-size: rem(24);
+            margin-bottom: rem(15);
+        }
+    }
+
+    &__child-item {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        a {
+            padding: 0;
+
+            &:hover {
+                color: rgb(251, 159, 88);
+            }
+        }
+
+        li {
+        }
+    }
+}
+.c-header-nav ul li:hover .c-header-nav__child {
+    display: block;
 }
