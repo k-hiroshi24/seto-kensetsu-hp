@@ -2,8 +2,11 @@
 
 .c-header-nav {
     display: flex;
+    align-items: center;
     font-size: rem(12);
-    .c-header-nav__item {
+
+
+    &__item {
         padding-right: rem(15);
         padding-left: rem(15);
         display: block;
@@ -18,9 +21,9 @@
         }
 
         a {
-            // display: inline-block;
-            // padding-right: rem(15);
-            // padding-left: rem(15);
+            height: inherit;
+            cursor: pointer;
         }
     }
+
 }

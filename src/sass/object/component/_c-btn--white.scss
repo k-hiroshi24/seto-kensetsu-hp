@@ -10,6 +10,8 @@
   border-radius: rem(15);
   position: relative;
   display: inline-block;
+  font-size: rem(13);
+
 
   &::after{
     content: "";

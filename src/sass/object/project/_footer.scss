@@ -1,0 +1,171 @@
+@use "global" as *;
+
+.p-footer {
+
+    background-color: $base;
+    padding-top: rem(60);
+    padding-block: rem(40);
+
+    &__content {
+        display: flex;
+        width: 90%;
+        margin-bottom: rem(45);
+        margin: 0 auto;
+    }
+    &__left {
+        width: 50%;
+        padding-left: 10%;
+    }
+
+    &__info {
+        font-family: $second-font-family;
+        background-color: $base;
+        color: $white;
+    }
+    &__subtitle {
+        font-size: rem(13);
+        margin-bottom: rem(12);
+        letter-spacing: 0.07em;
+    }
+
+    &__wrap {
+        display: flex;
+        align-items: center;
+        margin-bottom: rem(22);
+        letter-spacing: 0.26em;
+    }
+    &__logo {
+        width: rem(40);
+        padding-right: rem(12);
+        padding-right: rem(12);
+
+        img {
+        }
+    }
+    &__co-name {
+        margin-bottom: rem(10);
+
+        p {
+            font-size: rem(26);
+            span {
+                font-size: rem(18);
+                padding-right: rem(12);
+            }
+        }
+    }
+
+    &__adress {
+        margin-bottom: rem(10);
+        letter-spacing: 0.13em;
+
+        span {
+            padding-right: rem(12);
+        }
+    }
+    &__tel {
+        margin-bottom: rem(10);
+        letter-spacing: 0.13em;
+
+        span {
+            padding-right: rem(12);
+        }
+    }
+    &__mail {
+        margin-bottom: rem(22);
+        letter-spacing: 0.13em;
+
+        span {
+            padding-right: rem(12);
+        }
+    }
+
+    &__googlmap {
+        letter-spacing: 0.13em;
+        text-align: center;
+    }
+
+    &__right {
+        width: 50%;
+    }
+
+    &__sitemap {
+        background-color: $base;
+        color: $white;
+    }
+    &__sitemap-title {
+        font-size: rem(13);
+        letter-spacing: 0.29em;
+        font-family: $second-font-family;
+        padding-bottom: rem(10);
+        margin-bottom: rem(20);
+        position: relative;
+
+        &::before {
+            position: absolute;
+            content: "";
+            width: 95%;
+            height: 1px;
+            background-color: $white;
+            bottom: 0;
+            left: 0;
+        }
+
+        p {
+        }
+    }
+
+    &__sitemap-wrap {
+        display: flex;
+    }
+    &__sitemap-left {
+        li {
+            font-size: rem(10);
+            margin-bottom: rem(12);
+            span {
+                font-size: rem(13);
+                padding-right: rem(12);
+            }
+        }
+    }
+    &__sitemap-service-contents {
+        margin-top: rem(10);
+        position: relative;
+
+        &::before {
+            position: absolute;
+            content: "";
+            width: 1px;
+            height: rem(70);
+            background-color: $white;
+            top: 0;
+            left: 10px;
+        }
+        li {
+            padding-left: rem(20);
+        }
+    }
+
+    &__sitemap-right {
+        padding-left: 50px;
+        li {
+            font-size: rem(10);
+            margin-bottom: rem(12);
+            span {
+                font-size: rem(13);
+                padding-right: rem(12);
+            }
+        }
+    }
+
+    &__copyright {
+        color: $white;
+        text-align: center;
+        letter-spacing: 0.52em;
+        opacity: 63%;
+        font-size: rem(10);
+
+        span {
+            padding-right: rem(15);
+        }
+    }
+}

@@ -2,45 +2,55 @@
 <html lang="ja">
 <%- include('./common/_head') %>
 
-  <body>
-    <!-- <%- include('./common/_top-header') %>
-      <%- include('./component/_c-btn',{text:'これはテストです', link:'#'}) %>
-    <%- include('./common/_footer') %>
+<body>
+
+  <%- include('./common/_top-header') %>
+  <%- include('./project/_p-mv') %>
+ 
+
+  <section class="l-top-about">
+    <%- include('./project/_p-top-about') %>
+  </section>
+  
+  <section class="l-top-service">
+    <%- include('./project/_p-top-service') %>
+    
+    <div class="l-top-asbest">
+      <%- include('./project/_p-top-asbest') %>
+    </div>
+  </section>
+    
+  <section class="l-top-sensible">
+    <%- include('./project/_p-top-sensible') %>
+  </section>
+  
+  <section class="l-top-works">
+    <%- include('./project/_p-top-works') %>
+  </section>
+  
+  <section class="l-top-news">
+    <%- include('./project/_p-top-news') %>
+  </section>
+  
+  <section class="l-banner">
+    <%- include('./project/_p-banner') %>
+  </section>
+  
+
+  <%- include('./common/_footer') %>
+  <%- include('./component/_c-to-top') %>
 
 
-    <% for (var i=0; i < 4; i++) { %>
-      <%- include('./component/_c-btn',{text:'これはテストです', link:'#'}) %>
-      <% } %> -->
-
-    <%- include('./component/_c-btn',{text:'採用情報ページ',link:'recruit.html'}) %>
-      <%- include('./component/_c-btn--contact',{text:'Contact',link:'contact.html'}) %>
-        <%- include('./component/_c-header-nav')%>
-          <%- include('./component/_c-section-title',{egTitle:'About us',jaTitle:'瀬戸建設について'}) %>
-            <%- include('./component/_c-btn--more',{text:'Read More',link:'contact.html'}) %>
-              <%- include('./component/_c-btn--more-white',{text:'Read More',link:'contact.html'}) %>
-                <%- include('./project/_p-top-service-cards') %>
-                  <%- include('./project/_p-top-sensible-contents') %>
-                  <%- include('./project/_p-top-news-items') %>
-                  <%- include('./project/_p-banner') %>
-                  <%- include('./project/_p-footer-left') %>
-                  <%- include('./project/_p-footer-sitemap') %>
-
-
-                  <%- include('./common/_top-header') %>
-                  <%- include('./project/_p-mv') %>
-                  <%- include('./project/_p-top-about') %>
-                  <%- include('./project/_p-top-service') %>
-                  <%- include('./project/_p-top-asbest') %>
-                  <%- include('./project/_p-top-sensible') %>
-                  <%- include('./project/_p-top-works') %>
-                  <%- include('./project/_p-top-news') %>
-                  <%- include('./project/_p-top-news-items') %>
-                  <%- include('./common/_footer') %>
-                  <%- include('./component/_c-to-top') %>
-                        
-                  
-                      </body>
-
-
-
+</body>
 </html>
+
+
+
+
+    
+    
+    
+    
+    
+
+

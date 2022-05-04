@@ -1,33 +1,45 @@
 @use "global" as *;
-.p-top-news-items{
 
-    .p-top-news-item{
+    .p-top-news-item {
         display: flex;
         justify-content: center;
         letter-spacing: 0.24rem;
         margin-bottom: rem(35);
-        
-        span{
-            
-        }
-        
-        &__date{
-            width: rem(140);
+        font-family: $second-font-family;
+
+        &__date {
+            width: rem(180);
             text-align: center;
             border-bottom: 1px solid $black;
-            margin-right: rem(50);
+            margin-right: rem(25);
+        }
+        &__title {
+            margin-right: rem(20);
+            border-bottom: 1px solid $black;
+            width: calc(100% - 140px);
+        }
+        &__more {
+            font-size: rem(13);
+            width: rem(260);
 
+            display: inline-block;
+            text-align: center;
+            position: relative;
+        
+
+            &::before{
+                content: "";
+                position: absolute;
+                width: rem(150);
+                height: 1px;
+                background-color: $black;
+                bottom: 0;
+                left: 15px;
+
+            }
+        }
+        span {
+        }
 
     }
-    &__title{
-        margin-right: rem(50);
-        border-bottom: 1px solid $black;
 
-
-    }
-    &__more{
-        border-bottom: 1px solid $black;
-
-    }
-}
-}

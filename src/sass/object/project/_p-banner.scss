@@ -1,5 +1,6 @@
 @use "global" as *;
 .p-banner {
+    
     display: flex;
     
     &__wrap {
@@ -19,6 +20,7 @@
             z-index: 1;
         
         }
+
         img {
             position: absolute;
             top: 0;

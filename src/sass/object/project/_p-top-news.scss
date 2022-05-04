@@ -1,12 +1,20 @@
 @use "global" as *;
+
 .p-top-news{
+    
     background-color: $bg;
     padding-top: rem(75);
     padding-bottom: rem(95);
     
     &__inner{
-        
+        width: 80%;
+        margin: 0 auto rem(75); 
     }
+    &__items{
+        height: rem(150);
+        overflow-y: scroll;
+    }
+    
     &__title{
         text-align: center;
         margin-bottom: rem(50);
@@ -19,5 +27,18 @@
         text-align: center;
 
     }
-
+    
+    ::-webkit-scrollbar {
+        width: 7px;
+        height: 7px;
+    
+        }
+        ::-webkit-scrollbar-track {
+        background-color:$white;
+        }
+        ::-webkit-scrollbar-thumb {
+        background:$base;
+        width: 130px;
+        }
 }
+
