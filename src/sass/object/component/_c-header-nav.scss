@@ -3,14 +3,13 @@
 .c-header-nav {
     ul {
         display: flex;
-        flex-wrap: wrap;
         align-items: center;
         font-size: rem(12);
     }
 
+    // メインナビ
     &__item {
-        padding-right: rem(15);
-        padding-left: rem(15);
+        padding: 0 20px;
         display: block;
         transition: ease 0.8s;
         position: relative;
@@ -24,45 +23,45 @@
         }
 
         a {
-            padding-right: rem(15);
-            padding-left: rem(15);
-            cursor: pointer;
+            padding: 40px 0;
+            letter-spacing: 0.1em;
         }
     }
 
     // ドロップダウンメニュー
+    // 普段は見えないアイテム
     &__child {
-
         ul {
             display: flex;
             flex-direction: column;
             align-items: stretch;
+            transition: all 0.6s;
         }
 
         background-color: rgb(239 239 239);
         color: $base;
-        padding: 30px;
-        width: 50vw;
+        padding: 20px;
+        width: 60vw;
         position: absolute;
         top: 6.8vh;
-        left: -23.43vw;
-        z-index: 100;
+        left: -40vw;
+        z-index: 200;
         box-shadow: 0 0 8px gray;
-        // display: none;
+        display: none;
     }
 
     &__child-title {
         p {
             font-size: rem(24);
             margin-bottom: rem(15);
+            padding-left: rem(60);
         }
     }
 
-    &__child-item {
+    &__child-items {
         display: flex;
         align-items: center;
         flex-wrap: wrap;
-        justify-content: space-between;
 
         a {
             padding: 0;
@@ -71,11 +70,133 @@
                 color: rgb(251, 159, 88);
             }
         }
+    }
 
-        li {
+    // サービスサブアイテム
+    &__child-service-item01,
+    &__child-service-item02,
+    &__child-service-item03 {
+        width: 33%;
+        text-align: center;
+        padding-right: rem(10);
+        padding-left: rem(20);
+        padding-top: rem(10);
+        padding-bottom: rem(10);
+
+        &:not(:last-child) {
+            border-right: 1px solid rgba(0, 0, 0, 0.252);
+        }
+        &::after {
+            content: ">";
+            top: 0;
+            right: 0;
+        }
+        a {
+            padding: 10px 30px 10px 10px;
         }
     }
+
+    &__child-service-item01 {
+        &::before {
+            content: "";
+            display: inline-block;
+            background-image: url(../images/common/service-icon01.png);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 25px;
+            height: 25px;
+        }
+    }
+    &__child-service-item02 {
+        &::before {
+            content: "";
+            display: inline-block;
+            background-image: url(../images/common/service-icon02.png);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 25px;
+            height: 25px;
+        }
+    }
+    &__child-service-item03 {
+        &::before {
+            content: "";
+            display: inline-block;
+            background-image: url(../images/common/service-icon03.png);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 42px;
+            height: 25px;
+        }
+
+
+    }
+    
+    // センシブルサブアイテム
+    &__child-sensible-item01,
+    &__child-sensible-item02 {
+        width: 50%;
+        text-align: center;
+        padding-right: rem(20);
+        padding-left: rem(20);
+        padding-top: rem(10);
+        padding-bottom: rem(10);
+    
+        &:not(:last-child) {
+            border-right: 1px solid rgba(0, 0, 0, 0.252);
+        }
+        &::after {
+            content: ">";
+            top: 0;
+            right: 0;
+        }
+        a {
+            padding: 10px 30px 10px 10px;
+        }
 }
+}
+
+// &__child-service-item01 {
+//     &::before {
+//         content: "";
+//         display: inline-block;
+//         background-image: url(../images/common/service-icon01.png);
+//         background-position: center;
+//         background-size: cover;
+//         background-repeat: no-repeat;
+//         width: 25px;
+//         height: 25px;
+//     }
+// }
+// &__child-service-item02 {
+//     &::before {
+//         content: "";
+//         display: inline-block;
+//         background-image: url(../images/common/service-icon02.png);
+//         background-position: center;
+//         background-size: cover;
+//         background-repeat: no-repeat;
+//         width: 25px;
+//         height: 25px;
+//     }
+// }
+// &__child-service-item03 {
+//     &::before {
+//         content: "";
+//         display: inline-block;
+//         background-image: url(../images/common/service-icon03.png);
+//         background-position: center;
+//         background-size: cover;
+//         background-repeat: no-repeat;
+//         width: 42px;
+//         height: 25px;
+//     }
+// }
+
+// ホバー時の動き
 .c-header-nav ul li:hover .c-header-nav__child {
     display: block;
 }
