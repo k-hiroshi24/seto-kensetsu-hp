@@ -1,14 +1,14 @@
 @use "global" as *;
-.p-news-cards {
+.p-works-cards--3column {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr ;
-    gap: rem(50);
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: rem(25);
 
-    .p-news-card__content {
+    .p-works-card__content {
         // width: 23%;
     }
 
-    .p-news-card__img {
+    .p-works-card__img {
         width: 100%;
         position: relative;
         padding-top: 67.65%;
@@ -23,7 +23,7 @@
         }
     }
 
-    .p-news-card__meta {
+    .p-works-card__meta {
         position: relative;
         font-size: rem(14);
         display: flex;
@@ -31,28 +31,20 @@
         margin-bottom: rem(10);
         font-family: $second-font-family;
         .date {
-            margin-right: rem(14);
+            margin-right: rem(10);
         }
-        .tag{
-            font-size: rem(13);
-            width: 72px;
-            height: 18px;
-            line-height: 18px;
-            background-color: $base;
-            text-align: center;
-            color:$white;
-            border-radius: 5px;
-
+        h3 {
+            font-size: rem(14);
         }
     }
-    .p-news-card__subtitle {
-        font-size: rem(16);
+    .p-works-card__subtitle {
+        font-size: rem(13);
         letter-spacing: 0.16em;
         margin-bottom: rem(20);
         font-family: $second-font-family;
     }
 
-    .p-news-card__btn {
+    .p-works-card__btn {
     text-align: center;
     padding-right: 30px;
     }
