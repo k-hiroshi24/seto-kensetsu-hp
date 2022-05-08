@@ -16,7 +16,6 @@
         letter-spacing: 0.21em;
         color: $base;
         margin-bottom: rem(40);
-        
     }
     &__text {
         letter-spacing: 0.08em;
@@ -37,7 +36,6 @@
         &:nth-child(odd) {
             padding-left: 120px;
         }
-        
     }
     &__content-wrap {
         margin-bottom: rem(95);
@@ -48,22 +46,16 @@
         display: flex;
         flex-direction: row-reverse;
         align-items: center;
-
-    
     }
-
-
 
     &__text-box {
         width: 50%;
         padding: 0 50px;
-
     }
-    &__text-box--asbest, 
-    &__text-box--dioxin{
+    &__text-box--asbest,
+    &__text-box--dioxin {
         width: 60%;
         padding: 0 50px;
-
     }
     &__title {
         font-size: rem(26);
@@ -73,19 +65,18 @@
         h3 {
             position: relative;
             display: inline-block;
-            &::after{
-                content:"";
-                display:block;
-                width:140px;
-                height:10px;
-                background-color:$bg;
-                position:absolute;
-                bottom:0;
-                left:50%;
+            &::after {
+                content: "";
+                display: block;
+                width: 140px;
+                height: 10px;
+                background-color: $bg;
+                position: absolute;
+                bottom: 0;
+                left: 50%;
                 transform: translateX(-50%);
                 z-index: -1;
             }
-        
         }
     }
     &__sub-title {
@@ -97,11 +88,46 @@
         letter-spacing: 0.05em;
         line-height: 1.964;
     }
+
+    &__text02 {
+        font-size: rem(14);
+        letter-spacing: 0.05em;
+        line-height: 1.964;
+        position: relative;
+        text-align: center;
+        border: 1px solid $black;
+        width: 100%;
+        padding: 15px 0;
+        border-left: none;
+        border-right: none;
+        position: relative;
+        margin-bottom: rem(28);
+        letter-spacing: 0.05em;
+
+        &::before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 0.5px;
+            top: -5px;
+            left: 0;
+            background-color: $black;
+        }
+        &::after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 0.5px;
+            bottom: -5px;
+            left: 0;
+            background-color: $black;
+        }
+    }
+
     &__img {
         width: 50%;
         padding-top: 30%;
         position: relative;
-
 
         img {
             position: absolute;
@@ -113,7 +139,7 @@
         }
     }
 
-    &__content--dioxin{
+    &__content--dioxin {
         background-color: $bg;
     }
     &__img--asbest,
@@ -121,7 +147,6 @@
         width: 40%;
         padding-top: 30%;
         position: relative;
-
 
         img {
             position: absolute;
@@ -133,4 +158,3 @@
         }
     }
 }
-
