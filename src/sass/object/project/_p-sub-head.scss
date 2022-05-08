@@ -1,0 +1,25 @@
+@use "global" as *;
+
+.p-sub-head {
+    text-align: center;
+    &__icon {
+        width: 70px;
+        height: 50px;
+        text-align: center;
+        display: inline-block;
+        margin-bottom: rem(24);
+    }
+    &__title {
+        margin-bottom: rem(40);
+
+        h2 {
+            font-size: rem(32);
+            letter-spacing: 0.21em;
+            color: $base;
+        }
+    }
+    &__text {
+        letter-spacing: 0.08em;
+        line-height: 1.3;
+    }
+}
