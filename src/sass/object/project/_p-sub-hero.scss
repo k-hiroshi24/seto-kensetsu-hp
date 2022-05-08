@@ -1,0 +1,30 @@
+@use "global" as *;
+
+.p-sub-hero{
+
+    &__inner {
+        position: relative;
+    }
+    &__sub-hero {
+        margin-top: rem(130);
+        margin-bottom: rem(124);
+    
+    }
+    &__img {
+        width: 75%;
+        margin-left: auto;
+    }
+    &__title {
+        font-size: rem(64);
+        position: absolute;
+        top: -3.125vh;
+        left: 13.68vw;
+    }
+    &__text {
+        font-size: rem(16);
+        text-align: center;
+        margin-bottom: rem(40);
+        letter-spacing: 0.08em;
+    }
+}
+
