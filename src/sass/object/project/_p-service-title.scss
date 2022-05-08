@@ -1,0 +1,24 @@
+@use "global" as *;
+.p-service-title{
+    text-align: center;
+    &__icon{
+        width: 50px;
+        height: 50px;
+        text-align: center;
+        display: inline-block;
+        margin-bottom: rem(24);
+        margin-top: rem(95);
+    }
+    &__title{
+        font-size: rem(32);
+        letter-spacing: 0.21em;
+        color:$base;
+        margin-bottom: rem(40);
+
+    }
+    &__text{
+        letter-spacing: 0.08em;
+        line-height: 1.3;
+
+    }
+}

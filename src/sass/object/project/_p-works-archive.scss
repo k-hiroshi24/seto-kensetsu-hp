@@ -1,0 +1,80 @@
+@use "global" as *;
+.p-works-archive {
+    position: relative;
+
+    &__sub-hero {
+        margin-top: rem(130);
+        margin-bottom: rem(124);
+    }
+    &__img {
+        width: 75%;
+        margin-left: auto;
+    }
+    &__title {
+        font-size: rem(64);
+        position: absolute;
+        top: -3.125vh;
+        left: 13.68vw;
+    }
+    &__text {
+        font-size: rem(16);
+        text-align: center;
+        margin-bottom: rem(40);
+        letter-spacing: 0.08em;
+    }
+
+    .p-works-cards--3column {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: rem(25);
+        margin-bottom: rem(65);
+
+        .p-works-card__content {
+        }
+
+        .p-works-card__img {
+            width: 100%;
+            position: relative;
+            padding-top: 67.65%;
+            margin-bottom: rem(10);
+
+            img {
+                position: absolute;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        .p-works-card__meta {
+            position: relative;
+            font-size: rem(14);
+            display: flex;
+            letter-spacing: 0.16em;
+            margin-bottom: rem(10);
+            font-family: $second-font-family;
+            .date {
+                margin-right: rem(10);
+            }
+            h3 {
+                font-size: rem(14);
+            }
+        }
+        .p-works-card__subtitle {
+            font-size: rem(13);
+            letter-spacing: 0.16em;
+            margin-bottom: rem(20);
+            font-family: $second-font-family;
+        }
+
+        .p-works-card__btn {
+            text-align: center;
+            padding-right: 30px;
+        }
+    }
+    &__pagenation {
+       
+        margin-bottom: rem(80);
+    }
+}

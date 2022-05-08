@@ -1,0 +1,136 @@
+@use "global" as *;
+.p-service-title {
+    text-align: center;
+    margin-top: rem(95);
+    margin-bottom: rem(70);
+
+    &__icon {
+        width: 50px;
+        height: 50px;
+        text-align: center;
+        display: inline-block;
+        margin-bottom: rem(24);
+    }
+    &__title {
+        font-size: rem(32);
+        letter-spacing: 0.21em;
+        color: $base;
+        margin-bottom: rem(40);
+        
+    }
+    &__text {
+        letter-spacing: 0.08em;
+        line-height: 1.3;
+    }
+}
+.p-service02 {
+    &__content {
+        display: flex;
+        align-items: center;
+        // margin-top: rem(70);
+        margin-bottom: rem(95);
+
+        &:nth-child(even) {
+            flex-direction: row-reverse;
+            padding-right: 100px;
+        }
+        &:nth-child(odd) {
+            padding-left: 120px;
+        }
+        
+    }
+    &__content-wrap {
+        margin-bottom: rem(95);
+        background-color: $bg;
+    }
+
+    &__content--asbest {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+
+    
+    }
+
+
+
+    &__text-box {
+        width: 50%;
+        padding: 0 50px;
+
+    }
+    &__text-box--asbest, 
+    &__text-box--dioxin{
+        width: 60%;
+        padding: 0 50px;
+
+    }
+    &__title {
+        font-size: rem(26);
+        margin-bottom: rem(32);
+        letter-spacing: 0.08em;
+
+        h3 {
+            position: relative;
+            display: inline-block;
+            &::after{
+                content:"";
+                display:block;
+                width:140px;
+                height:10px;
+                background-color:$bg;
+                position:absolute;
+                bottom:0;
+                left:50%;
+                transform: translateX(-50%);
+                z-index: -1;
+            }
+        
+        }
+    }
+    &__sub-title {
+        margin-bottom: rem(32);
+        letter-spacing: 0.05em;
+    }
+    &__text {
+        font-size: rem(14);
+        letter-spacing: 0.05em;
+        line-height: 1.964;
+    }
+    &__img {
+        width: 50%;
+        padding-top: 30%;
+        position: relative;
+
+
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__content--dioxin{
+        background-color: $bg;
+    }
+    &__img--asbest,
+    &__img--dioxin {
+        width: 40%;
+        padding-top: 30%;
+        position: relative;
+
+
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
+

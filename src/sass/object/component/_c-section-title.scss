@@ -1,15 +1,15 @@
 @use "global" as *;
 
 .c-section-title {
-	// text-align: center;
+
 	h2 {
-		font-size: 2.9vw;
+		font-size: rem(42);
 		color: $base;
 		letter-spacing: 0.07em;
 
 	}
 	p {
-		font-size: 0.9vw;
+		font-size: rem(13);
 		letter-spacing: 0.16em;
 	}
 }
