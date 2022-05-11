@@ -1,18 +1,42 @@
+<!-- <div class="p-service-tab">
+    <div class="tabContent l-inner">
+        <input id="TAB01" type="radio" name="tab" checked="checked">
+        <label class="tabContent__label tabContent__label01" for="TAB01">建造物の解体業務</label>
+        <div class="tabContent__main">
+    
+        </div>
+        <input id="TAB02" type="radio" name="tab">
+        <label class="tabContent__label tabContent__label02" for="TAB02">特殊解体業務</label>
+        <div class="tabContent__main">
+    
+        </div>
+        <input id="TAB03" type="radio" name="tab">
+        <label class="tabContent__label tabContent__label03" for="TAB03">残土処理・廃棄物等処分</label>
+        <div class="tabContent__main">
+    
+        </div>
+    </div>
 
-<div class="tabContent">
-    <input id="TAB01" type="radio" name="tab" checked="checked">
-    <label class="tabContent__label" for="TAB01">タブ1</label>
-    <div class="tabContent__main">
-        <p>タブ1の内容が表示されます。</p>
+</div> -->
+
+<div class="p-service-tab" id="js-tab">
+    <div class="p-service-tab__nav l-inner">
+        <a href="" class="p-service-tab__nav-item is-active item01" data-nav="0">建造物の解体業務</a>
+        <a href="" class="p-service-tab__nav-item item02" data-nav="1">特殊解体業務</a>
+        <a href="" class="p-service-tab__nav-item item03" data-nav="2">残土処理・廃棄物等処分</a>
     </div>
-    <input id="TAB02" type="radio" name="tab">
-    <label class="tabContent__label" for="TAB02">タブ2</label>
-    <div class="tabContent__main">
-        <p>タブ2の内容が表示されます。</p>
+    <div class="p-service-tab__content" data-content="0">
+        <%- include('../project/_p-sub-head--service01') %>
+        <%- include('../project/_p-service01') %>
     </div>
-    <input id="TAB03" type="radio" name="tab">
-    <label class="tabContent__label" for="TAB03">タブ3</label>
-    <div class="tabContent__main">
-        <p>タブ3の内容が表示されます。</p>
+    <div class="p-service-tab__content" data-content="1">
+        <%- include('../project/_p-sub-head--service02') %>
+        <%- include('../project/_p-service02') %>
+    </div>
+    <div class="p-service-tab__content" data-content="2">
+        <%- include('../project/_p-sub-head--service03') %>
+        <%- include('../project/_p-service03') %>
     </div>
 </div>
+
+
