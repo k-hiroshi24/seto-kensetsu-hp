@@ -1,0 +1,117 @@
+@use "global" as *;
+.p-about-info {
+    padding-top: 23vw;
+    background-color: $bg;
+    margin-top: -95px;
+
+    &__inner {
+        display: flex;
+        justify-content: center;
+    }
+    &__title {
+        writing-mode: vertical-rl;
+        color: $base;
+        font-size: rem(41);
+        letter-spacing: 0.8em;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    &__table {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex: 3;
+        border: none;
+
+        table {
+            border-collapse: collapse;
+
+            tr {
+                &:nth-child(even) {
+                    background-color: rgba(255, 255, 255, 0.44);
+                }
+                th {
+                    padding-left: 100px;
+                    padding-right: 50px;
+                    font-weight: $normal;
+                }
+
+                td {
+                    border: none;
+                    padding: 32px 20px 30px 50px;
+
+                    ul {
+                        li {
+                            line-height: 2;
+                        }
+                    }
+
+                    p {
+                    }
+                }
+            }
+        }
+        .info05 {
+            font-size: rem(14);
+            padding-left: 40px;
+            padding-top: 10px;
+        }
+    }
+    &__inner02 {
+    }
+    &__wrap {
+        padding-left: 30px;
+    }
+
+    &__contents {
+        display: flex;
+        &:not(:last-child) {
+            margin-bottom: 20px;
+        }
+        figure {
+            width: 85px;
+            height: 76px;
+            padding-top: 0%;
+            position: relative;
+
+            image {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        p {
+        }
+        span {
+        }
+    }
+    .tel {
+        margin-right: 20px;
+    }
+    .free-tel {
+        position: relative;
+        margin-left: 20px;
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: -20px;
+            background-image: url(../images/common/black-free-tel.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            width: 17px;
+            height: 17px;
+        }
+    }
+    &__btn {
+    }
+    &__inner {
+    }
+    &__inner {
+    }
+}

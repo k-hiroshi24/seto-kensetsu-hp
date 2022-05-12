@@ -1,5 +1,5 @@
 <div class="p-about-info">
-    <div class="p-about-info__inner l-inner">
+    <div class="p-about-info__inner ">
         <div class="p-about-info__title">
             <h2>会社概要</h2>
         </div>
@@ -30,7 +30,7 @@
                     <th>事業内容</th>
                     <td>
                         <p>解体工事全般・残土処理業</p>
-                        <ul>
+                        <ul class="info05">
                             <li>木造建築物解体工事</li>
                             <li>内装解体工事</li>
                             <li>鉄筋コンクリート構造物解体工事</li>
@@ -39,6 +39,7 @@
                             <li>船舶解体工事</li>
                             <li>プラント及び重機械解体工事</li>
                             <li>樹木伐採 代根撤去処分</li>
+                            <br>
                             <li>アスベスト調査業務</li>
                             <li>アスベスト除去工事</li>
                             <li>ダイオキシン焼却施設解体</li>
@@ -52,49 +53,63 @@
                 <tr>
                     <th>所在地</th>
                     <td>
-                        <div class="p-about-info__inner">
+                        <div class="p-about-info__inner02">
                             <div class="p-about-info__contents">
                                 <figure>
-                                    <img src="images/common/map01.JPG" alt="">
+                                    <img src="images/common/about-info01.jpg" alt="">
                                 </figure>
-                                <p>[本　　　社]</p>
-                                <span>〒629-2232　京都府宮津市字中野58番地の1</span>
-                                <div class="p-about-info__btn">
-                                    <%- include('../component/_c-btn--more',{text:'Google Mapはこちら',link:'.html'}) %>
+                                <div class="p-about-info__wrap">
+                                    <p>[本　　　社]</p>
+                                    <span>〒629-2232　京都府宮津市字中野58番地の1</span>
+                                    <div class="p-about-info__btn">
+                                        <%- include('../component/_c-btn--more',{text:'Google Mapはこちら',link:'.html'}) %>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="p-about-info__contents">
+                                <figure>
+                                    <img src="images/common/about-info02.jpg" alt="">
+                                </figure>
+                                <div class="p-about-info__wrap">
+                                    <p>[国分営業所]</p>
+                                    <span>〒629-2234　京都府宮津市字国分62番地の1</span>
+                                    <div class="p-about-info__btn">
+                                        <%- include('../component/_c-btn--more',{text:'Google Mapはこちら',link:'.html'}) %>
+                                    </div>
+
                                 </div>
                             </div>
                             <div class="p-about-info__contents">
                                 <figure>
-                                    <img src="images/common/map02.JPG" alt="">
+                                    <img src="images/common/about-info03.jpg" alt="">
                                 </figure>
-                                <p>[国分営業所]</p>
-                                <span>〒629-2234　京都府宮津市字国分62番地の1</span>
-                                <div class="p-about-info__btn">
-                                    <%- include('../component/_c-btn--more',{text:'Google Mapはこちら',link:'.html'}) %>
+                                <div class="p-about-info__wrap">
+
+                                    <p>[算所営業所]</p>
+                                    <span>〒629-2402　京都府与謝郡与謝野町字算所小字平田430番地</span>
+                                    <div class="p-about-info__btn">
+                                        <%- include('../component/_c-btn--more',{text:'Google Mapはこちら',link:'contact.html'})
+                                            %>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="p-about-info__contents">
-                                <figure>
-                                    <img src="images/common/map03.JPG" alt="">
-                                </figure>
-                                <p>[算所営業所]</p>
-                                <span>〒629-2402　京都府与謝郡与謝野町字算所小字平田430番地</span>
-                                <div class="p-about-info__btn">
-                                    <%- include('../component/_c-btn--more',{text:'Google Mapはこちら',link:'contact.html'})
-                                        %>
-                                </div>
+
                             </div>
 
                             <div class="p-about-info__contents">
                                 <figure>
-                                    <img src="images/common/map04.JPG" alt="">
+                                    <img src="images/common/about-info04.jpg" alt="">
                                 </figure>
-                                <p>[京丹後営業所]</p>
-                                <span>〒629-3131　京都府京丹後市網野町高橋1番地の3</span>
-                                <div class="p-about-info__btn">
-                                    <%- include('../component/_c-btn--more',{text:'Google Mapはこちら',link:'contact.html'})
-                                        %>
+                                <div class="p-about-info__wrap">
+                                    <p>[京丹後営業所]</p>
+                                    <span>〒629-3131　京都府京丹後市網野町高橋1番地の3</span>
+                                    <div class="p-about-info__btn">
+                                        <%- include('../component/_c-btn--more',{text:'Google Mapはこちら',link:'contact.html'})
+                                            %>
+                                    </div>
+
                                 </div>
+
                             </div>
                             </ul>
                         </div>
@@ -103,8 +118,9 @@
                 <tr>
                     <th>電話番号・FAX</th>
                     <td>
-                        <p>Tel.0772-27-0257</p>
-                        <p>Fax.0772-27-1756</p>
+                        <p class="free-tel">0120-358-504</p>
+                        <span class="tel">Tel.0772-27-0257</span>
+                        <span>Fax.0772-27-1756</span>
                     </td>
                 </tr>
                 <tr>
