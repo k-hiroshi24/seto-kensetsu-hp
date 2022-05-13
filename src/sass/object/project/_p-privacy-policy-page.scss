@@ -1,0 +1,39 @@
+@use "global" as *;
+.privacy-policy-page {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    &__inner {
+    }
+    &__tiltle {
+    }
+    &__sub-title {
+        margin-top: 100px;
+        text-align: center;
+        margin-bottom: 70px;
+        letter-spacing: 0.08em;
+    }
+    &__item {
+        &:not(:last-child) {
+            margin-bottom: 65px;
+        }
+
+        h2 {
+            padding-bottom: 20px;
+            font-size: rem(18);
+            letter-spacing: 0.08em;
+            border-bottom: 1px solid #000;
+        }
+        p {
+            letter-spacing: 0.08em;
+            line-height: 1.86;
+            font-size: rem(14);
+            padding-top: 20px;
+        }
+
+                        
+        ul {
+            li {
+            }
+        }
+    }
+}
