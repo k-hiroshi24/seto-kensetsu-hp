@@ -1,0 +1,221 @@
+@use "global" as *;
+.p-contact-page {
+    &__inner {
+    }
+    &__title {
+    }
+    &__text {
+        text-align: center;
+        margin-top: 115px;
+    }
+
+    &__contaner {
+        width: 900px;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+    &__tel {
+    }
+
+    &__tel-title {
+        text-align: center;
+        letter-spacing: 0.21em;
+        font-size: rem(27);
+        margin-top: 50px;
+        color: $base;
+        margin-bottom: 25px;
+    }
+    &__tel-num {
+        text-align: center;
+        letter-spacing: 0.16em;
+        font-size: rem(46);
+    }
+    &__tel-text {
+        text-align: center;
+        letter-spacing: 0.08em;
+        font-size: rem(14);
+    }
+    &__mail {
+    }
+    &__mail-title {
+        text-align: center;
+        letter-spacing: 0.21em;
+        font-size: rem(27);
+        margin-top: 90px;
+        color: $base;
+        padding: 10px 300px;
+        background-color: $bg;
+    }
+    &__mail-text {
+        margin-top: 30px;
+        text-align: center;
+        letter-spacing: 0.08em;
+    }
+
+// contact-form
+    &__c-form {
+        margin-top: 70px;
+    }
+    &__c-form-text {
+        text-align: end;
+        font-family: $second-font-family;
+        padding-bottom: 10px;
+        font-weight: 400;
+        span {
+            font-size: rem(16);
+            color: #e73828;
+
+        }
+    }
+    &__c-form-inner {
+        padding-bottom: 95px;
+
+        label {
+            display: flex;
+            align-self: center;
+        }
+
+        label:not(:last-child) {
+            margin-bottom: 20px;
+        }
+
+        .title {
+            display: flex;
+            align-self: center;
+            // padding-right: 20px;
+            width: 205px;
+            font-weight: 400;
+            font-family: $second-font-family;
+            font-size: rem(15);
+        }
+
+        .title-textarea {
+            display: flex;
+            align-self: center;
+            // padding-top: 20px;
+            // padding-right: 20px;
+            width: 205px;
+            font-weight: 400;
+            font-family: $second-font-family;
+            font-size: rem(15);
+        }
+
+        .required {
+            padding-left: 3px;
+            font-size: 15px;
+            color: #e73828;
+        }
+
+        input,
+        textarea {
+            display: block;
+            padding: 8px 20px;
+            flex: 1;
+            border: 1px solid $black;
+        }
+
+        textarea {
+            height: 200px;
+        }
+    }
+
+    // チェックボックス
+    input[type="checkbox"],
+    input[type="radio"] {
+        position: absolute;
+        white-space: nowrap;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        border: 0;
+        padding: 0;
+        clip: rect(0 0 0 0);
+        clip-path: inset(50%);
+        margin: -1px;
+    }
+
+    .checkbox__list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .checkbox__item {
+        // display: block;
+        justify-content: center;
+    }
+
+    .checkbox__label {
+        display: flex;
+        align-items: center;
+        position: relative;
+        padding: 10px 20px;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 1;
+        font-family: $second-font-family;
+        letter-spacing: 0.08em;
+
+        // background-color: #c9d8e2;
+        // border: 3px solid #96aab7;
+        // border-radius: 10px;
+    }
+
+    .checkbox__label::before {
+        content: "";
+        display: inline-block;
+        margin-right: 8px;
+        width: 15px;
+        height: 15px;
+        background-color: #fff;
+        border: 2px solid #96aab7;
+        // border-radius: 6px;
+    }
+
+    input.form__input:checked ~ .checkbox__label {
+        // color: #f4f4f4;
+        // background-color: #053e62;
+    }
+
+    input.form__input:focus ~ .checkbox__label {
+        //     border: 3px solid #0277b4;
+        //     box-shadow: 0 0 8px #0277b4;
+    }
+
+    input.form__input:checked ~ .checkbox__label::before {
+        background-color: $base;
+        border: 1px solid $base;
+    }
+
+    input.form__input:checked ~ .checkbox__label::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 20px;
+        transform: translateY(-50%) rotate(-45deg);
+        width: 14px;
+        height: 4px;
+        border-bottom: 2px solid #f4f4f4;
+        border-left: 2px solid #f4f4f4;
+    }
+
+    // submit
+    .submit-btn {
+        text-align: center;
+    }
+
+    .submit {
+        display: inline-block;
+        background-color: $base;
+        font-family: $second-font-family;
+
+
+        &__form {
+            color: $white;
+            padding: 15px 85px;
+            border: $base;
+        }
+        &__label {
+        }
+    }
+}

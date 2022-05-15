@@ -1,0 +1,65 @@
+<div class="p-contact-page">
+    <div class="p-contact-page__inner l-inner">
+        <div class="p-contact-page__title">
+            <%- include('../component/_c-section-title',{egTitle:'Contact',jaTitle:'お問い合わせ'}) %>
+                <p class="p-contact-page__text">有限会社　瀬戸建設へのお問い合わせは、<br>
+                    お電話・メールにて承ります。お気軽にご連絡ください</p>
+        </div>
+
+        <div class="p-contact-page__contaner">
+            <div class="p-contact-page__tel">
+                <p class="p-contact-page__tel-title">お電話でのお問合せ</p>
+                <p class="p-contact-page__tel-num">0772-27-0257</p>
+                <p class="p-contact-page__tel-text">お電話受付時間　9:00〜17:00 ｜ 平日・土曜（日・祝日休み）</p>
+            </div>
+            <div class="p-contact-page__mail">
+                <p class="p-contact-page__mail-title">メールでのお問合せ</p>
+                <p class="p-contact-page__mail-text">なお送信いただいたデータは他の目的で使うことはありませんので、ご安心下さい。</p>
+            </div>
+            <div class="p-contact-page__c-form">
+                <p class="p-contact-page__c-form-text"><span>※</span>は必須項目になります。</p>
+                <div class="p-contact-page__c-form-inner">
+                    <label>
+                        <span class="title">お名前<span class="required">※</span></span>
+                        <input type="text" name="name" required>
+                    </label>
+                    <label>
+                        <span class="title">フリガナ<span class="required">※</span></span>
+                        <input type="text" name="sub-name" required>
+                    </label>
+
+                    <label>
+                        <span class="title">メールアドレス<span class="required">※</span></span>
+                        <input type="email" name="email" required>
+                    </label>
+
+                    <label>
+                        <span class="title">電話番号</span>
+                        <input type="tel" name="tel">
+                    </label>
+
+                    <label>
+                        <span class="title-textarea">お問い合わせ内容<span class="required">※</span></span>
+                        <textarea type="textarea" name="contact" required></textarea>
+                    </label>
+
+                    <label class="checkbox__item ">
+                        <input type="checkbox" name="checkbox-item" class="form__input checked">
+                        <span class="checkbox__label">ご入力いただいた内容でよろしければチェックを外して送信してください。</span>
+                    </label>
+                    <div class="submit-btn">
+                        <label class="submit ">
+                            <input type="submit" name="submit" value="送信する" class="submit__form">
+                            <span class="submit__label"></span>
+                        </label>
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+
+
+    </div>
+</div>
