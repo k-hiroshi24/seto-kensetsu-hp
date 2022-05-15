@@ -1,25 +1,17 @@
 @use "global" as *;
 .p-top-header {
-    
-    
-    
     &__inner {
-        
         padding-left: $padding-pc;
         display: flex;
         justify-content: space-between;
         width: 100%;
-        // max-width: rem(1440);
         margin-left: auto;
-        
-        
     }
-    &__left{
+    &__left {
         display: flex;
         flex-wrap: wrap;
         align-items: center;
 
-        
     }
 
     &__logo {
@@ -37,16 +29,37 @@
         }
     }
 
-    &__right{
+    &__right {
         display: flex;
         // flex-wrap: wrap;
         align-items: center;
-
     }
     &__adress {
+        // display: flex;
+        vertical-align: middle;
+        .tel,
+        .adress {
+            display: inline-block;
+        }
+        .tel {
+            &::before {
+                content: "";
+                display: inline-block;
+                background-image: url(../images/common/black-free-tel.png);
+                background-size: contain;
+                background-position: center;
+                background-repeat: no-repeat;
+                width: 23px;
+                height: 23px;
+                position: relative;
+                left: -1px;
+                top: 5px;
+            }
+        
+        }
         span {
             font-size: rem(13);
-            padding-right: rem(10);
+            padding-right: rem(30);
         }
     }
     &__nav {

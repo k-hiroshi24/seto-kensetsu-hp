@@ -99,7 +99,7 @@
         &::before {
             content: "";
             position: absolute;
-            top: 0;
+            top: 5px;
             left: -20px;
             background-image: url(../images/common/black-free-tel.png);
             background-repeat: no-repeat;
@@ -108,10 +108,5 @@
             height: 17px;
         }
     }
-    &__btn {
-    }
-    &__inner {
-    }
-    &__inner {
-    }
+
 }

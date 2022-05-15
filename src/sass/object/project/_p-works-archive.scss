@@ -17,6 +17,14 @@
         margin-bottom: rem(65);
 
         .p-works-card__content {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .p-works-card__wrap{
+            flex-grow: 1; 
+            display: flex; 
+            flex-direction: column;
         }
 
         .p-works-card__img {
@@ -53,11 +61,13 @@
             letter-spacing: 0.16em;
             margin-bottom: rem(20);
             font-family: $second-font-family;
+
         }
 
         .p-works-card__btn {
             text-align: center;
             padding-right: 30px;
+            margin-top: auto;
         }
     }
     &__pagenation {
