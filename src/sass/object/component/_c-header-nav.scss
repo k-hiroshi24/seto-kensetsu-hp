@@ -40,10 +40,10 @@
 
         background-color: rgb(239 239 239);
         color: $base;
-        padding: 20px;
+        padding: 5px 5px 15px 5px;
         width: 60vw;
         position: absolute;
-        top: 6.8vh;
+        top: 6vh;
         left: -40vw;
         z-index: 200;
         box-shadow: 0 0 8px gray;
@@ -53,7 +53,7 @@
     &__child-title {
         p {
             font-size: rem(24);
-            margin-bottom: rem(15);
+            // margin-bottom: rem(15);
             padding-left: rem(60);
         }
     }

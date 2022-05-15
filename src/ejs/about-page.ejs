@@ -2,36 +2,30 @@
 <html lang="ja">
 <%- include('./common/_head') %>
 
-<body>
+  <body>
+    <!-- header -->
+    <%- include('./common/_top-header') %>
+      <div class="l-section-title l-inner">
+        <%- include('./component/_c-section-title',{egTitle:'About us',jaTitle:'瀬戸建設について'}) %>
+      </div>
+      <section class="l-about-idea">
+        <%- include('./project/_p-about-idea') %>
+      </section>
+      <section class="l-about-info">
+        <%- include('./project/_p-about-info') %>
+      </section>
+      <main>
+        <!-- footer -->
+        <section class="l-banner">
+          <%- include('./project/_p-banner') %>
+        </section>
+        <%- include('./common/_footer') %>
+          <%- include('./component/_c-to-top') %>
+  </body>
 
-  <%- include('./common/_top-header') %>
 
 
 
-  <div class="l-section-title l-inner">
-    <%- include('./component/_c-section-title',{egTitle:'About us',jaTitle:'瀬戸建設について'}) %>
-</div>
-  <%- include('./project/_p-about-idea') %>
-  <%- include('./project/_p-about-info') %>
-  <section class="l-banner">
-    <%- include('./project/_p-banner') %>
-  </section>
-  
-
-  <%- include('./common/_footer') %>
-  <%- include('./component/_c-to-top') %>
 
 
-</body>
 </html>
-
-
-
-
-    
-    
-    
-    
-    
-
-

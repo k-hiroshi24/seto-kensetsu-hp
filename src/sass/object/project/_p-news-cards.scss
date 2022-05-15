@@ -3,6 +3,8 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr ;
     gap: rem(50);
+    margin-top: 125px;
+
 
     .p-news-card__content {
         // width: 23%;
@@ -55,5 +57,11 @@
     .p-news-card__btn {
     text-align: center;
     padding-right: 30px;
+    }
+
+    &__pagenation{
+        margin-top: 85px;
+        margin-bottom: 105px;
+        text-align: center;
     }
 }

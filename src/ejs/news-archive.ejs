@@ -4,26 +4,31 @@
 
 <body>
 
-  <%- include('./common/_top-header') %>
+  <header>
+    <%- include('./common/_top-header') %>
+  </header>
 
 
 
-  
-  <%- include('./project/_p-sub-hero--news') %>
+
+  <section class="l-news-archive">
+    <%- include('./project/_p-sub-hero--news') %>
+  </section>
+
   <%- include('./project/_p-news-cards') %>
 
 
-  <section class="l-banner">
+  <footer class="l-banner">
     <%- include('./project/_p-banner') %>
-  </section>
+    <%- include('./common/_footer') %>
+    <%- include('./component/_c-to-top') %>
+  </footer>
   
-
-  <%- include('./common/_footer') %>
-  <%- include('./component/_c-to-top') %>
-
 
 </body>
 </html>
+  
+
 
 
 

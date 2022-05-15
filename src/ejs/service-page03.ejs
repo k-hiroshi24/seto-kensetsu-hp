@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ja">
+<%- include('./common/_head') %>
+
+    <body>
+        <!-- header -->
+        <%- include('./common/_top-header') %>
+            <main>
+                <div class="l-section-title l-inner">
+                    <%- include('./component/_c-section-title',{egTitle:'Service',jaTitle:'業務内容'}) %>
+                </div>
+                <section class="l-service-content03">
+                    <%- include('./project/_p-service-content03') %>
+                </section>
+            </main>
+
+            <!-- footer -->
+            <section class="l-banner">
+                <%- include('./project/_p-banner') %>
+            </section>
+            <%- include('./common/_footer') %>
+                <%- include('./component/_c-to-top') %>
+    </body>
+
+</html>

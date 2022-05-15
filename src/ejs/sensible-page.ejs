@@ -3,24 +3,31 @@
 <%- include('./common/_head') %>
 
     <body>
+        <!-- header -->
+        <header>
+            <%- include('./common/_top-header') %>
+        </header>
 
-        <%- include('./common/_top-header') %>
-
-        
-        <%- include('./project/_p-sub-hero--sensible') %>
-        <%- include('./project/_p-sub-head--sensible') %>
-        <%- include('./project/_p-sdgs-layout') %>
-        <%- include('./project/_p-sensible-sdgs') %>
-
+        <main>
+            <div class="l-sub-hero--sensible">
+                <%- include('./project/_p-sub-hero--sensible') %>
+            </div>
+            <div class="l-sub-head--sensible">
+                <%- include('./project/_p-sub-head--sensible') %>
+            </div>
+            <section class="l-sensible-layaout">
+                <%- include('./project/_p-sdgs-layout') %>
+            </section>
+            <section class="l-sensible-sdgs">
+                <%- include('./project/_p-sensible-sdgs') %>
+            </section>
+        </main>
+        <!-- footer -->
         <section class="l-banner">
-        <%- include('./project/_p-banner') %>
+            <%- include('./project/_p-banner') %>
         </section>
-
-
         <%- include('./common/_footer') %>
-        <%- include('./component/_c-to-top') %>
-
-
+            <%- include('./component/_c-to-top') %>
     </body>
 
 </html>
