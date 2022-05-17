@@ -2,32 +2,26 @@
 <html lang="ja">
 <%- include('./common/_head') %>
 
-<body>
+  <body>
 
-  <%- include('./common/_top-header') %>
+    <header>
+      <%- include('./common/_top-header') %>
+    </header>
+    
 
-  <%- include('./project/_p-works-archive') %>
-
-
-  <section class="l-banner">
-    <%- include('./project/_p-banner') %>
-  </section>
-  
-
-  <%- include('./common/_footer') %>
-  <%- include('./component/_c-to-top') %>
+    <main>
+      <%- include('./project/_p-works-archive') %>
+    </main>
 
 
-</body>
+
+    <footer class="l-banner">
+      <%- include('./project/_p-banner') %>
+        <%- include('./common/_footer') %>
+          <%- include('./component/_c-to-top') %>
+    </footer>
+  </body>
+
+
+
 </html>
-
-
-
-
-    
-    
-    
-    
-    
-
-

@@ -6,24 +6,28 @@
 
 
         <!-- header -->
-        <%- include('./common/_top-header') %>
-            <main>
-                <div class="l-section-title l-inner">
-                    <%- include('./component/_c-section-title',{egTitle:'Service',jaTitle:'業務内容'}) %>
-                </div>
-                <section class="l-service-content02">
-                    <%- include('./project/_p-service-content02') %>
-                </section>
-            </main>
+        <header>
+            <%- include('./common/_top-header') %>
+        </header>
 
 
-
-            <!-- footer -->
-            <section class="l-banner">
-                <%- include('./project/_p-banner') %>
+        <main>
+            <div class="l-section-title l-inner">
+                <%- include('./component/_c-section-title',{egTitle:'Service',jaTitle:'業務内容'}) %>
+            </div>
+            <section class="l-service-content02">
+                <%- include('./project/_p-service-content02') %>
             </section>
+        </main>
+
+
+
+        <!-- footer -->
+        <footer class="l-footer">
+            <%- include('./project/_p-banner') %>
             <%- include('./common/_footer') %>
                 <%- include('./component/_c-to-top') %>
-    </body>
-
+    </footer>
+</body>
 </html>
+

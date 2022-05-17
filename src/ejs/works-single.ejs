@@ -3,21 +3,20 @@
 <%- include('./common/_head') %>
 
     <body>
+        <header>
+            <%- include('./common/_top-header') %>
+        </header>
 
-        <%- include('./common/_top-header') %>
+        <main>
+            <%- include('./project/_p-works-single') %>
+        </main>
 
-        
-        <%- include('./project/_p-works-single') %>
-
-        <section class="l-banner">
-        <%- include('./project/_p-banner') %>
-        </section>
-
-
-        <%- include('./common/_footer') %>
-        <%- include('./component/_c-to-top') %>
-
-
+        <footer class="l-banner">
+            <%- include('./project/_p-banner') %>
+                <%- include('./common/_footer') %>
+                    <%- include('./component/_c-to-top') %>
+        </footer>
     </body>
+
 
 </html>

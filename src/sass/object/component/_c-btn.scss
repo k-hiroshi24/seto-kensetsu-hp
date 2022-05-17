@@ -11,17 +11,17 @@
   position: relative;
   display: inline-block;
   font-size: rem(13);
-  transition: ease .8s;
-
+  
   &:hover{
     color: $white;
     border: 1px solid $base;
     background-color: $base;
-
+    transition: all .8s;
+    
     &:hover:after{
     background-image: url(/images/common/btn-arrow-type02.png);
     right: rem(5);
-    transition: ease .8s;
+    transition: all .8s;
 
     }
   }

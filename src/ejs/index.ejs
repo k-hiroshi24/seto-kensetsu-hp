@@ -6,8 +6,14 @@
 <main>
 
 <!-- header -->
+<header>
   <%- include('./common/_top-header') %>
+</header>
+
+<div class="l-mv">
   <%- include('./project/_p-mv') %>
+</div>
+
  
 
   <section class="l-top-about">
@@ -37,16 +43,16 @@
 </main>
 
 <!-- footer -->
-  <section class="l-banner">
+  <footer class="l-footer">
     <%- include('./project/_p-banner') %>
-  </section>
+    <%- include('./common/_footer') %>
+    <%- include('./component/_c-to-top') %>
+  </footer>
+  
+  </body>
+  </html>
+ 
 
-  <%- include('./common/_footer') %>
-  <%- include('./component/_c-to-top') %>
-
-
-</body>
-</html>
 
 
 
