@@ -14,8 +14,12 @@
     opacity: 1;
     transition: all ease 0.6s;
 
-    &:hover{
+    &:hover {
         opacity: 0.8;
+        &:hover::after {
+            transition: ease .8s;
+            top: 40%;
+        }
     }
 
     &:after {
@@ -29,7 +33,7 @@
         height: rem(20);
         top: 50%;
         left: 50%;
-        transform: translate(-50%,-100%);
+        transform: translate(-50%, -100%);
         // display: inline-block;
     }
 }

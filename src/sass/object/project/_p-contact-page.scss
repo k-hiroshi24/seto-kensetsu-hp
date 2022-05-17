@@ -29,6 +29,20 @@
         text-align: center;
         letter-spacing: 0.16em;
         font-size: rem(46);
+
+        &::before {
+            content: "";
+            display: inline-block;
+            background-image: url(../images/common/black-free-tel.png);
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            width: 5vw;
+            height:5vw;
+            position: relative;
+            left: -8px;
+            top: 1vw;
+        }
     }
     &__tel-text {
         text-align: center;
@@ -206,14 +220,21 @@
 
     .submit {
         display: inline-block;
-        background-color: $base;
-        font-family: $second-font-family;
-
-
+        
+        
         &__form {
+            background-color: $base;
+            font-family: $second-font-family;
             color: $white;
             padding: 15px 85px;
             border: $base;
+
+            &:hover{
+                color: $black;
+                border:1px solid $black;
+                background-color: $white;
+                transition: ease 0.8s;
+            }
         }
         &__label {
         }

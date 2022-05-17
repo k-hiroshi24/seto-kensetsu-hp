@@ -12,6 +12,19 @@
   display: inline-block;
   font-size: rem(13);
 
+  &:hover{
+    color: $white;
+    border: 1px solid $base;
+    background-color: $base;
+
+    &:hover:after{
+    background-image: url(/images/common/btn-arrow-type02.png);
+    right: rem(5);
+    transition: ease .8s;
+
+    }
+  }
+
 
   &::after{
     content: "";
@@ -21,7 +34,7 @@
     background-size: contain;
     width: rem(35);
     height: rem(15);
-    top: rem(15);
+    top: rem(12);
     right: rem(30);
     
   }

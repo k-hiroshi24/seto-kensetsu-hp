@@ -1,7 +1,6 @@
 @use "global" as *;
 
 .p-footer {
-
     background-color: $base;
     padding-top: rem(60);
     padding-block: rem(40);
@@ -69,6 +68,19 @@
 
         span {
             padding-right: rem(12);
+            &::before {
+                content: "";
+                display: inline-block;
+                background-image: url(../images/common/white-free-tel.png);
+                background-size: contain;
+                background-position: center;
+                background-repeat: no-repeat;
+                width: 23px;
+                height: 23px;
+                position: relative;
+                left: -1px;
+                top: 5px;
+            }
         }
     }
     &__mail {
@@ -118,10 +130,16 @@
     &__sitemap-wrap {
         display: flex;
     }
+
     &__sitemap-left {
         li {
             font-size: rem(10);
             margin-bottom: rem(12);
+            a {
+                &:hover {
+                    opacity: 0.6;
+                }
+            }
             span {
                 font-size: rem(13);
                 padding-right: rem(12);
@@ -143,6 +161,11 @@
         }
         li {
             padding-left: rem(20);
+            a {
+                &:hover {
+                    opacity: 0.6;
+                }
+            }
         }
     }
 
@@ -151,6 +174,11 @@
         li {
             font-size: rem(10);
             margin-bottom: rem(12);
+            a {
+                &:hover {
+                    opacity: 0.6;
+                }
+            }
             span {
                 font-size: rem(13);
                 padding-right: rem(12);
