@@ -23,6 +23,10 @@
         width: 100%;
         max-width: rem(650);
         margin: 0 auto;
+
+        @include mq(){
+            text-align: start;
+        }
     }
     &__cards {
         margin-bottom: rem(60);

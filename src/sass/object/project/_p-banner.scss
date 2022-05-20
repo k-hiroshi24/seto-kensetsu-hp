@@ -2,12 +2,23 @@
 .p-banner {
     
     display: flex;
+
+    @include mq(){
+        // display: block;
+        flex-direction: column;
+    }
     
     &__wrap {
         text-align: center;
         position: relative;;
         width: 50%;
         padding-top: 15%;
+
+        @include mq(){
+            width: 100%;
+            padding-top: 40%;
+        }
+
         
         &:hover::before{
             background-color:rgba(79,61,34,0.7);
@@ -44,6 +55,10 @@
             border: 1px solid $white;
             padding: rem(25) rem(35);
             z-index: 2;
+
+            @include mq(){
+                padding: rem(10) rem(20);
+            }
             span {
                 display: block;
                 font-size: rem(12);

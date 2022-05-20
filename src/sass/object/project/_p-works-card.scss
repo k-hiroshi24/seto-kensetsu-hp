@@ -4,8 +4,12 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: rem(25);
 
+    @include mq(){
+        display: block;
+    }
+
     .p-works-card__content {
-        // width: 23%;
+
     }
 
     .p-works-card__img {

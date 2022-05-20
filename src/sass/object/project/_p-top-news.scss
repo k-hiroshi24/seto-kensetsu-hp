@@ -9,6 +9,10 @@
     &__inner{
         width: 80%;
         margin: 0 auto rem(75); 
+
+        @include mq(){
+            width: 100%;
+        }
     }
     &__items{
         height: rem(150);

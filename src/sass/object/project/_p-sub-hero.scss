@@ -1,24 +1,34 @@
 @use "global" as *;
 
-.p-sub-hero{
-
+.p-sub-hero {
     &__inner {
         position: relative;
     }
     &__sub-hero {
         margin-top: rem(130);
         margin-bottom: rem(124);
-    
     }
     &__img {
         width: 75%;
         margin-left: auto;
+
+        img {
+            @include mq() {
+                height: 23vh;
+            }
+        }
     }
+
     &__title {
         font-size: rem(64);
         position: absolute;
         top: -3.125vh;
         left: 13.68vw;
+
+        @include mq() {
+            left: 6.68vw;
+            top: -9.125vh;
+        }
     }
     &__text {
         font-size: rem(16);
@@ -27,4 +37,3 @@
         letter-spacing: 0.08em;
     }
 }
-

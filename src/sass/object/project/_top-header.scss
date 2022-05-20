@@ -1,17 +1,24 @@
 @use "global" as *;
 .p-top-header {
+    @include mq() {
+        height: 50px;
+        line-height: 50px;
+    }
     &__inner {
         padding-left: $padding-pc;
         display: flex;
         justify-content: space-between;
         width: 100%;
         margin-left: auto;
+
+        @include mq() {
+            padding-left: 10px;
+        }
     }
     &__left {
         display: flex;
         flex-wrap: wrap;
         align-items: center;
-
     }
 
     &__logo {
@@ -22,26 +29,41 @@
         font-size: rem(22);
         font-weight: $bold;
         padding-right: rem(20);
+        @include mq() {
+            font-size: rem(18);
+        }
 
         span {
             font-size: rem(18);
             padding-right: rem(10);
+            @include mq() {
+                font-size: rem(13);
+            }
         }
     }
 
     &__right {
         display: flex;
-        // flex-wrap: wrap;
         align-items: center;
+
+        @include mq() {
+            display: none;
+        }
     }
     &__adress {
-        // display: flex;
         vertical-align: middle;
+
         .tel,
         .adress {
             display: inline-block;
+            @include mq() {
+                display: none;
+            }
         }
         .tel {
+            @include mq() {
+                display: none;
+            }
             &::before {
                 content: "";
                 display: inline-block;
@@ -55,7 +77,6 @@
                 left: -1px;
                 top: 5px;
             }
-        
         }
         span {
             font-size: rem(13);

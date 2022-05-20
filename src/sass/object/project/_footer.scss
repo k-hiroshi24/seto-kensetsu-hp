@@ -10,10 +10,18 @@
         width: 90%;
         margin-bottom: rem(45);
         margin: 0 auto;
+
+        @include mq(){
+            display: block;
+        }
     }
     &__left {
         width: 50%;
         padding-left: 10%;
+
+        @include mq(){
+            width: 100%;
+        }
     }
 
     &__info {
@@ -101,9 +109,15 @@
         width: 50%;
     }
 
+
+
     &__sitemap {
         background-color: $base;
         color: $white;
+
+        @include mq(){
+            display: none;
+        }
     }
     &__sitemap-title {
         font-size: rem(13);

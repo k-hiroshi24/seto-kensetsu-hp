@@ -8,26 +8,16 @@
         display: flex;
         align-items: center;
         margin-bottom: rem(95);
+        @include mq() {
+            display: block;
+        }
 
 
         ul {
-            // width: 80%;
-            // height: 100px;
             font-size: rem(12);
             border-left: 3px double $black;
             margin-left: 40xp;
             display: inline-block;
-
-            // &::before {
-            //     content: "";
-            //     display: inline-block;
-            //     width: 3px;
-            //     height: 110px;
-            //     background-color: #0097a7;
-            //     position: absolute;
-            //     top: 0px;
-            //     left: -5px;
-            // }
 
             li {
                 position: relative;
@@ -55,16 +45,29 @@
         &:nth-child(even) {
             flex-direction: row-reverse;
             padding-right: 100px;
+
+            @include mq(){
+                padding-right: 0px;
+            }
+
         }
         &:nth-child(odd) {
             padding-left: 120px;
+
+            @include mq(){
+                padding-left: 0px;
+            }
         }
     }
 
     &__text-box {
         width: 50%;
         padding: 0 50px;
-        // padding-left: 50px;
+    
+        @include mq(){
+            width: 100%;
+            padding: 10px;
+        }
     }
     &__title {
         font-size: rem(26);
@@ -140,6 +143,11 @@
         width: 50%;
         padding-top: 30%;
         position: relative;
+
+        @include mq(){
+            width: 100%;
+            padding-top: 60%;
+        }
 
         img {
             position: absolute;

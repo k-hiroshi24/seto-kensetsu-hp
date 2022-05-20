@@ -9,12 +9,25 @@
         align-items: center;
         margin-bottom: rem(95);
 
+        @include mq() {
+            display: block;
+        }
+
+
         &:nth-child(even) {
             flex-direction: row-reverse;
             padding: 50px 70px;
+
+            @include mq(){
+                padding: 10px;
+            }
         }
         &:nth-child(odd) {
             padding-left: 120px;
+
+            @include mq(){
+                padding-left: 0px;
+            }
         }
     }
     &__content-wrap {
@@ -27,21 +40,40 @@
         flex-direction: row-reverse;
         align-items: center;
         margin-bottom: 32px;
+
+        @include mq(){
+        flex-direction: column-reverse;
+        }
     }
 
     &__text-box {
         width: 50%;
         padding: 0 50px;
+
+        @include mq(){
+            width: 100%;
+            padding: 0 ;
+        }
     }
     &__text-box--asbest,
     &__text-box--dioxin {
         width: 60%;
         padding: 0 50px;
+
+        @include mq(){
+            width: 100%;
+            padding: 0 ;
+        }
     }
     &__title {
         font-size: rem(26);
         margin-bottom: rem(32);
         letter-spacing: 0.08em;
+
+        @include mq(){
+            display: block;
+            text-align: center;
+        }
 
         h3 {
             position: relative;
@@ -127,6 +159,11 @@
         padding-top: 30%;
         position: relative;
 
+        @include mq(){
+            width: 100%;
+            padding-top: 60%;
+        }
+
         img {
             position: absolute;
             top: 0;
@@ -148,6 +185,11 @@
         width: 40%;
         padding-top: 30%;
         position: relative;
+
+        @include mq(){
+            width: 100%;
+            padding-top: 60%;
+        }
 
         img {
             position: absolute;

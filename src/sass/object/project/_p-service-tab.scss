@@ -126,12 +126,15 @@
 //     }
 // }
 
-
 // タブ
 .p-service-tab {
     &__nav {
         display: flex;
         justify-content: center;
+
+        @include mq() {
+            flex-direction: column;
+        }
     }
     &__nav-item {
         width: 350px;
@@ -142,10 +145,16 @@
         text-align: center;
         font-size: rem(19.1);
         display: inline-block;
-        opacity: .3;
+        opacity: 0.3;
 
+        @include mq() {
+            padding: 10px 15px 10px 10px;
+            margin: 0 auto 10px;
+            width: 320px;
+
+        }
     }
-    &__nav-item.is-active{
+    &__nav-item.is-active {
         background-color: $base;
         opacity: 1;
     }
@@ -153,7 +162,6 @@
     .item01,
     .item02,
     .item03 {
-
         position: relative;
 
         &::after {
@@ -165,10 +173,13 @@
             border-width: 0 0 40px 40px;
             border-color: $base #fff;
             transform: rotate(90deg);
+
+            @include mq() {
+                border-width: 0 0 20px 20px;
+            }
         }
     }
     .item01 {
-
         &::before {
             content: "";
             display: inline-block;
@@ -180,6 +191,12 @@
             background-image: url(../images/common/service-icon01w.png);
             background-repeat: no-repeat;
             background-size: contain;
+
+
+            @include mq(){
+                width: 20px;
+                height: 20px;
+            }
         }
     }
     .item02 {
@@ -194,6 +211,11 @@
             background-image: url(../images/common/service-icon02w.png);
             background-repeat: no-repeat;
             background-size: contain;
+
+            @include mq(){
+                width: 20px;
+                height: 20px;
+            }
         }
     }
     .item03 {
@@ -208,9 +230,15 @@
             background-image: url(../images/common/service-icon03w.png);
             background-repeat: no-repeat;
             background-size: contain;
+
+
+            @include mq(){
+                width: 20px;
+                height: 20px;
+            }
         }
     }
-    &__content{
+    &__content {
         // display: none;
         margin-top: 90px;
     }

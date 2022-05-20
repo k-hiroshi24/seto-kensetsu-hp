@@ -6,7 +6,6 @@
 	position: relative;
 	display: inline-block;
 
-
 	&::before {
 		content: "";
 		position: absolute;
@@ -18,6 +17,11 @@
 		height: rem(15);
 		top: 20%;
 		right: -36px;
+
+		@include mq() {
+			width: rem(18);
+			height: rem(10);
+		}
 	}
 
 	&::after {

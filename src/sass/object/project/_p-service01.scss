@@ -10,41 +10,62 @@
         display: flex;
         align-items: center;
 
+        @include mq() {
+            display: block;
+        }
+
         &:nth-child(even) {
             flex-direction: row-reverse;
             padding-right: 100px;
+            
+            @include mq(){
+                padding-right: 0px;
+            }
+
         }
         &:nth-child(odd) {
             padding-left: 120px;
+            
+            @include mq(){
+                padding-left: 0px;
+            }
         }
     }
 
     &__text-box {
         width: 50%;
         padding: 0 50px;
-        // padding-left: 50px;
+
+        @include mq(){
+            width: 100%;
+            padding: 0 ;
+        }
     }
     &__title {
         font-size: rem(26);
         margin-bottom: rem(32);
         letter-spacing: 0.08em;
-        display:inline-block;
+        display: inline-block;
+
+        @include mq(){
+            display: block;
+            text-align: center;
+        }
     }
     h3 {
         position: relative;
-        &::after{
-            content:"";
-            display:block;
-            width:140px;
-            height:10px;
-            background-color:$bg;
-            position:absolute;
-            bottom:0;
-            left:50%;
+        &::after {
+            content: "";
+            display: block;
+            width: 140px;
+            height: 10px;
+            background-color: $bg;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
             transform: translateX(-50%);
             z-index: -1;
         }
-    
     }
     &__sub-title {
         margin-bottom: rem(32);
@@ -59,6 +80,11 @@
         width: 50%;
         padding-top: 30%;
         position: relative;
+
+        @include mq(){
+            width: 100%;
+            padding-top: 60%;
+        }
 
         img {
             position: absolute;

@@ -13,11 +13,17 @@
         margin-bottom: 70px;
         margin-top: 40px;
     }
+
+    // 募集内容テーブル
     &__table {
         border-top: 1px solid $black;
         dl {
             display: flex;
             justify-content: space-between;
+
+            @include mq() {
+                display: block;
+            }
 
             dt {
                 padding: 45px 30px;
@@ -28,11 +34,22 @@
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
+
+                @include mq() {
+                    padding: 0;
+                    border-bottom: none;
+                    text-align: start;
+                }
             }
             dd {
                 padding: 45px 30px;
                 width: calc(100% - 230px);
                 border-bottom: 1px solid $black;
+
+                @include mq() {
+                    width: 100%;
+                    padding: 0;
+                }
 
                 p {
                     font-size: rem(15);
@@ -58,6 +75,11 @@
             position: relative;
             transition: ease 0, 6s;
             opacity: 1;
+
+            @include mq(){
+                padding: 15px 80px 15px 35px;
+                font-size: 14px;
+            }
 
             &:hover {
                 opacity: 0.8;

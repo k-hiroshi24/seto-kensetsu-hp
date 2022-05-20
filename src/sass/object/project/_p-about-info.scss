@@ -4,19 +4,45 @@
     background-color: $bg;
     margin-top: -95px;
 
+    @include mq() {
+        margin-top: 300px;
+        padding-bottom: 95px;
+    }
+
     &__inner {
         display: flex;
         justify-content: center;
+
+        @include mq() {
+            justify-content: flex-start;
+        }
     }
     &__title {
         writing-mode: vertical-rl;
         color: $base;
-        font-size: rem(41);
         letter-spacing: 0.8em;
         flex: 1;
         display: flex;
         flex-direction: column;
         justify-content: center;
+        
+        
+        @include mq() {
+            flex: none;
+        }
+        
+        h2 {
+            font-size: rem(41);
+            font-weight: $normal;
+
+            @include mq() {
+                font-size: rem(24);
+                position: relative;
+                top: -90px;
+                right: -76vw;
+                height: 140px;
+            }
+        }
     }
     &__table {
         display: flex;
@@ -25,26 +51,65 @@
         flex: 3;
         border: none;
 
+        @include mq() {
+            display: block;
+        }
+
         table {
             border-collapse: collapse;
 
             tr {
                 &:nth-child(even) {
                     background-color: rgba(255, 255, 255, 0.44);
+
+                }
+                &:nth-child(2n) th{
+                    border-left: 5px solid $bg;
+
+                    }
+                
+                
+                th,
+                td {
+                    @include mq(){
+                        
+                        display: block;
+                        text-align: left;
+                        width: 100%;
+                    }
                 }
                 th {
                     padding-left: 100px;
                     padding-right: 50px;
                     font-weight: $normal;
+
+                    @include mq() {
+                        padding: 0 10px;
+                        font-size: 13px;
+                        border-left: 5px solid rgba(255, 255, 255, .44);
+                        margin-top: 15px;
+                        margin-left: 10px;
+                        width: 90%;
+
+                        
+                    }
                 }
 
                 td {
                     border: none;
                     padding: 32px 20px 30px 50px;
 
+                    @include mq() {
+                        padding: 20px;
+                        font-size: 12px;
+                    }
+
                     ul {
                         li {
                             line-height: 2;
+                            @include mq() {
+                                font-size: 12px;
+                            }
                         }
                     }
 
@@ -63,6 +128,26 @@
     }
     &__wrap {
         padding-left: 30px;
+
+        @include mq(){
+            width: 70%;
+            padding-left: 15px;
+        }
+
+        p {
+            @include mq() {
+                font-size: rem(13);
+            }
+        }
+
+        span {
+            @include mq() {
+                font-size: rem(12);
+            }
+        }
+    }
+    &__btn {
+        font-size: rem(10);
     }
 
     &__contents {
@@ -71,23 +156,22 @@
             margin-bottom: 20px;
         }
         figure {
-            width: 85px;
-            height: 76px;
-            padding-top: 0%;
-            position: relative;
+            width: 10%;
+            // height: 76px;
+            // padding-top: 0%;
+            // position: relative;
 
-            image {
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
+            @include mq() {
+                width: 30%;
             }
-        }
-        p {
-        }
-        span {
+            image {
+                // position: absolute;
+                // top: 0;
+                // left: 0;
+                // width: 100%;
+                // height: 100%;
+                // object-fit: cover;
+            }
         }
     }
     .tel {
@@ -106,7 +190,10 @@
             background-size: contain;
             width: 17px;
             height: 17px;
+
+            @include mq(){
+                top: 0;
+            }
         }
     }
-
 }

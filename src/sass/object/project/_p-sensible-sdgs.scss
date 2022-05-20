@@ -1,11 +1,14 @@
 @use "global" as *;
 .p-senseble-sdgs {
-    
-    
     &__inner {
         width: 850px;
         max-width: 100%;
         margin: 0 auto;
+
+        @include mq() {
+            max-width: 90%;
+            margin: 0 auto;
+        }
     }
     &__title {
         font-size: rem(32);
@@ -13,14 +16,12 @@
         letter-spacing: 0.21em;
         text-align: center;
         margin-bottom: 60px;
-
     }
     &__sub-title {
         font-size: rem(20);
         letter-spacing: 0.16em;
         margin-bottom: 25px;
         text-align: center;
-
     }
     &__logo {
         width: 500px;
@@ -38,41 +39,70 @@
         line-height: 1.77;
         margin-bottom: 40px;
     }
-    &__text02{
+    &__text02 {
         font-size: rem(15);
         letter-spacing: 0.05em;
         line-height: 1.77;
         margin-bottom: 100px;
     }
 
-
-// sdgs-icon*4
+    // sdgs-icon*4
 
     &__contents {
         display: flex;
         flex-wrap: wrap;
-        gap:85px;
+        gap: 85px;
+
+        @include mq(){
+            gap: 40px;
+        }
     }
+
+
 
     &__content {
         width: 45%;
-        
-        
+
+        @include mq() {
+            display: flex;
+            align-items: flex-start;
+            width: 100%;
+        }
     }
     &__content-icon {
         width: 162px;
         margin: 0 auto;
+
+        @include mq() {
+            flex: 0.65;
+        }
+
         img {
+        }
+    }
+
+    &__wrap {
+        @include mq() {
+            flex: 1;
+            padding-left: 20px;
         }
     }
     &__content-title {
         font-size: rem(19);
         letter-spacing: 0.05em;
+        padding-bottom: 10px;
 
+        @include mq() {
+            font-size: rem(13);
+        }
     }
     &__content-text {
         font-size: rem(15);
         letter-spacing: 0.05em;
         line-height: 1.6;
+
+        @include mq() {
+            font-size: rem(12);
+        }
     }
 }
