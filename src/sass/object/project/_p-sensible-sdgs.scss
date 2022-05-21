@@ -16,18 +16,30 @@
         letter-spacing: 0.21em;
         text-align: center;
         margin-bottom: 60px;
+
+        @include mq() {
+            font-size: 18px;
+        }
     }
     &__sub-title {
         font-size: rem(20);
         letter-spacing: 0.16em;
         margin-bottom: 25px;
         text-align: center;
+
+        @include mq() {
+            font-size: 16px;
+        }
     }
     &__logo {
         width: 500px;
         max-width: 100%;
         margin: 0 auto;
         margin-bottom: 56px;
+
+        @include mq(){
+            width: 250px;
+        }
 
         img {
         }
@@ -38,12 +50,25 @@
         letter-spacing: 0.05em;
         line-height: 1.77;
         margin-bottom: 40px;
+
+        span{
+            color: $base;
+        }
+
+        @include mq(){
+            font-size: 13px;
+        }
     }
     &__text02 {
         font-size: rem(15);
         letter-spacing: 0.05em;
         line-height: 1.77;
         margin-bottom: 100px;
+
+        @include mq(){
+            font-size: 13px;
+            margin-bottom: 50px;
+        }
     }
 
     // sdgs-icon*4
@@ -53,12 +78,10 @@
         flex-wrap: wrap;
         gap: 85px;
 
-        @include mq(){
+        @include mq() {
             gap: 40px;
         }
     }
-
-
 
     &__content {
         width: 45%;
@@ -102,7 +125,7 @@
         line-height: 1.6;
 
         @include mq() {
-            font-size: rem(12);
+            font-size: rem(11);
         }
     }
 }

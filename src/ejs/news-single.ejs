@@ -2,37 +2,34 @@
 <html lang="ja">
 <%- include('./common/_head') %>
 
-<body>
-<!-- ヘッダー  -->
-<header>
-  <%- include('./common/_top-header') %>
-</header>
+  <body>
+    <!-- ヘッダー  -->
+    <header>
+      <%- include('./common/_top-header') %>
+    </header>
 
 
-<!-- ニュース詳細/サイドバー-->
-<main>
-  <%- include('./project/_p-news-single') %>
-</main>
+    <!-- ニュース詳細/サイドバー-->
+
+    <main>
+      <section class="l-news-archive">
+        <%- include('./project/_p-sub-hero--news') %>
+      </section>
+      <section>
+        <%- include('./project/_p-news-single') %>
+      </section>
+
+    </main>
 
 
-<!--フッター -->
-  <footer class="l-footer">
-  <%- include('./project/_p-banner') %>
+    <!--フッター -->
+    <footer class="l-footer">
+      <%- include('./project/_p-banner') %>
 
-  <%- include('./common/_footer') %>
-  <%- include('./component/_c-to-top') %>
-  </footer>
+        <%- include('./common/_footer') %>
+          <%- include('./component/_c-to-top') %>
+    </footer>
 
-</body>
+  </body>
+
 </html>
-
-
-
-
-    
-    
-    
-    
-    
-
-

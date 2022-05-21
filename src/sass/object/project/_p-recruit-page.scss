@@ -1,9 +1,17 @@
 @use "global" as *;
 .p-recruit-page {
     margin-top: 105px;
+    @include mq(){
+        margin-top: 80px;
+    }
     &__inner {
         margin-top: 120px;
         margin-bottom: 200px;
+
+        @include mq() {
+            margin-top: 63px;
+            margin-bottom: 80px;
+        }
     }
     &__title {
     }
@@ -12,6 +20,10 @@
         text-align: center;
         margin-bottom: 70px;
         margin-top: 40px;
+
+        @include mq() {
+            margin-bottom: 20px;
+        }
     }
 
     // 募集内容テーブル
@@ -36,9 +48,13 @@
                 justify-content: center;
 
                 @include mq() {
-                    padding: 0;
+                    padding: 0 10px;
+                    margin-top: 20px;
+                    margin-left: 10px;
                     border-bottom: none;
                     text-align: start;
+                    font-size: 14px;
+                    border-left: 5px solid $bg;
                 }
             }
             dd {
@@ -48,12 +64,20 @@
 
                 @include mq() {
                     width: 100%;
-                    padding: 0;
+                    padding: 15px 10px 20px 10px;
+                    margin-left: 10px;
+                    font-size: 13px;
                 }
 
                 p {
                     font-size: rem(15);
                     letter-spacing: 0.08em;
+
+                    @include mq() {
+                        font-size: 13px;
+                        letter-spacing: 0.06em;
+                        line-height: 1.8;
+                    }
                 }
             }
         }
@@ -64,6 +88,10 @@
         padding-bottom: 50px;
         font-size: rem(17);
         text-align: center;
+
+        @include mq() {
+            font-size: 14px;
+        }
     }
     &__btn {
         text-align: center;
@@ -76,7 +104,7 @@
             transition: ease 0, 6s;
             opacity: 1;
 
-            @include mq(){
+            @include mq() {
                 padding: 15px 80px 15px 35px;
                 font-size: 14px;
             }
@@ -101,6 +129,10 @@
                 top: rem(22);
                 right: rem(30);
                 transition: ease 0, 6s;
+
+                @include mq(){
+                    top: 3vh;
+                }
             }
         }
     }

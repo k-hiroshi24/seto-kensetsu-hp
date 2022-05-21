@@ -1,8 +1,8 @@
 @use "global" as *;
 .p-top-header {
     @include mq() {
-        height: 50px;
-        line-height: 50px;
+        height: 60px;
+        line-height: 60px;
     }
     &__inner {
         padding-left: $padding-pc;

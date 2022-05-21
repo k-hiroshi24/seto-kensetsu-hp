@@ -11,22 +11,23 @@
         align-items: center;
 
         @include mq() {
-            display: block;
+            flex-direction: column-reverse;
+            
         }
 
         &:nth-child(even) {
             flex-direction: row-reverse;
             padding-right: 100px;
-            
-            @include mq(){
-                padding-right: 0px;
-            }
 
+            @include mq() {
+                padding-right: 0px;
+                flex-direction: column-reverse;
+            }
         }
         &:nth-child(odd) {
             padding-left: 120px;
-            
-            @include mq(){
+
+            @include mq() {
                 padding-left: 0px;
             }
         }
@@ -36,9 +37,9 @@
         width: 50%;
         padding: 0 50px;
 
-        @include mq(){
+        @include mq() {
             width: 100%;
-            padding: 0 ;
+            padding: 0;
         }
     }
     &__title {
@@ -47,13 +48,16 @@
         letter-spacing: 0.08em;
         display: inline-block;
 
-        @include mq(){
+        @include mq() {
             display: block;
             text-align: center;
+            font-size: 16px;
+            margin-bottom: 25px;
         }
     }
     h3 {
         position: relative;
+        font-weight: $normal;
         &::after {
             content: "";
             display: block;
@@ -70,20 +74,39 @@
     &__sub-title {
         margin-bottom: rem(32);
         letter-spacing: 0.05em;
+
+        @include mq() {
+            font-size: 14px;
+            text-align: center;
+            margin-bottom: 25px;
+
+        }
     }
     &__text {
         font-size: rem(14);
         letter-spacing: 0.05em;
         line-height: 1.964;
+
+        @include mq() {
+            font-size: 13px;
+            padding-right: 15px;
+            padding-left: 15px;
+
+        }
     }
     &__img {
         width: 50%;
         padding-top: 30%;
         position: relative;
+        margin-left: 0 calc(50% - 50vw);
 
-        @include mq(){
+
+        @include mq() {
+            margin: 0 calc(50% - 50vw);
             width: 100%;
             padding-top: 60%;
+            width: 100vw;
+            margin-bottom: 35px;
         }
 
         img {

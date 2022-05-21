@@ -1,1 +1,8 @@
 @use "global" as *;
+.l-top-asbest{
+
+    @include mq(){
+        margin-top: 90px;
+    }
+
+}

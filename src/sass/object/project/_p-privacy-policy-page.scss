@@ -2,6 +2,11 @@
 .privacy-policy-page {
     margin-top: 100px;
     margin-bottom: 100px;
+
+    @include mq() {
+        margin-top: 30px;
+        margin-bottom: 85px;
+    }
     &__inner {
     }
     &__tiltle {
@@ -11,8 +16,16 @@
         text-align: center;
         margin-bottom: 70px;
         letter-spacing: 0.08em;
+
+        @include mq(){
+            margin-top: 75px;
+            margin-bottom: 40px;
+            font-size: 13px;
+
+        }
+
     }
-    &__items{
+    &__items {
         width: 920px;
         max-width: 100%;
         margin: 0 auto;
@@ -20,6 +33,10 @@
     &__item {
         &:not(:last-child) {
             margin-bottom: 65px;
+
+            // @include mq(){
+            //     margin-bottom: 40px;
+            // }
         }
 
         h2 {
@@ -27,16 +44,29 @@
             font-size: rem(18);
             letter-spacing: 0.08em;
             border-bottom: 1px solid #000;
+            font-weight: $normal;
+
+            @include mq(){
+                font-size: 15px;
+                padding-bottom: 10px;
+            }
         }
         p {
             letter-spacing: 0.08em;
             line-height: 1.86;
             font-size: rem(14);
             padding-top: 20px;
+
+            @include mq(){
+                font-size: 13px;
+            }
         }
 
-                        
         ul {
+            font-size: 13px;
+            line-height: 1.8;
+            letter-spacing: 0.05em;
+
             li {
             }
         }

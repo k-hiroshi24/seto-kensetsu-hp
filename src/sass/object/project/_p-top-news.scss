@@ -5,6 +5,11 @@
     background-color: $bg;
     padding-top: rem(75);
     padding-bottom: rem(95);
+
+    @include mq(){
+        padding-top: rem(65);
+        padding-bottom: rem(85);
+    }
     
     &__inner{
         width: 80%;

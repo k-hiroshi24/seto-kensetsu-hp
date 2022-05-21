@@ -2,16 +2,20 @@
 .p-top-about {
     display: flex;
     align-items: center;
+    
 
     @include mq() {
-        display: block;
+        flex-direction: column;
+        width: 100%;
     }
 
     &__img {
-        width: 50%;
+        width: 48%;
         position: relative;
         padding-top: 36%;
-        @include mq(){
+        // margin: 0 calc(50% - 50vw);
+
+        @include mq() {
             width: 100%;
         }
 
@@ -25,19 +29,28 @@
     }
     &__content {
         width: 50%;
-        margin-top: 7vw;
-        @include mq(){
+        margin-top: 5vw;
+        
+        @include mq() {
             width: 100%;
+            padding: 0 20px;
         }
-
     }
     &__title {
         text-align: center;
         margin-bottom: 36px;
+
+        @include mq(){
+            // margin-bottom: 30px;
+        }
     }
     &__sub-title {
         text-align: center;
         font-size: 1.7vw;
+
+        @include mq() {
+            font-size: 16px;
+        }
     }
     &__text {
         padding-left: 80px;
@@ -48,13 +61,20 @@
         bottom: 0;
         z-index: 100;
 
-        @include mq(){
+        @include mq() {
             padding-left: 0px;
             position: static;
+            padding-top: 20px;
         }
         p {
             padding-bottom: 30px;
             font-size: 1vw;
+            
+            @include mq(){
+                font-size: 13px;
+                line-height: 1.8;
+
+            }
         }
     }
 

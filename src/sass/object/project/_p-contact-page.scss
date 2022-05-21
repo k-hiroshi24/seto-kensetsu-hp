@@ -3,13 +3,20 @@
     &__inner {
     }
     &__title {
+        @include mq() {
+        }
     }
     &__text {
         text-align: center;
         margin-top: 115px;
+
+        @include mq() {
+            margin-top: 70px;
+            font-size: 14px;
+        }
     }
 
-    &__contaner {
+    &__container {
         width: 900px;
         max-width: 100%;
         margin: 0 auto;
@@ -24,11 +31,22 @@
         margin-top: 50px;
         color: $base;
         margin-bottom: 25px;
+
+        @include mq() {
+            margin-top: 40px;
+            font-size: 15px;
+            background-color: $bg;
+            padding: 10px;
+        }
     }
     &__tel-num {
         text-align: center;
         letter-spacing: 0.16em;
         font-size: rem(46);
+
+        @include mq() {
+            font-size: 28px;
+        }
 
         &::before {
             content: "";
@@ -38,16 +56,25 @@
             background-position: center;
             background-repeat: no-repeat;
             width: 5vw;
-            height:5vw;
+            height: 5vw;
             position: relative;
             left: -8px;
             top: 1vw;
+
+            @include mq() {
+                width: 10vw;
+                height: 8vw;
+            }
         }
     }
     &__tel-text {
         text-align: center;
         letter-spacing: 0.08em;
         font-size: rem(14);
+
+        @include mq() {
+            font-size: 10px;
+        }
     }
     &__mail {
     }
@@ -60,19 +87,30 @@
         padding: 10px 300px;
         background-color: $bg;
 
-        @include mq(){
+        @include mq() {
             padding: 10px 10px;
+            margin-top: 60px;
+            font-size: 15px;
         }
     }
     &__mail-text {
         margin-top: 30px;
         text-align: center;
         letter-spacing: 0.08em;
+
+        @include mq() {
+            font-size: 12px;
+            margin-top: 20px;
+        }
     }
 
-// contact-form
+    // contact-form
     &__c-form {
         margin-top: 70px;
+
+        @include mq() {
+            margin-top: 10px;
+        }
     }
     &__c-form-text {
         text-align: end;
@@ -80,10 +118,17 @@
         padding-bottom: 10px;
         font-weight: 400;
 
+        @include mq() {
+            font-size: 11px;
+        }
+
         span {
             font-size: rem(16);
             color: #e73828;
 
+            @include mq() {
+                font-size: 11px;
+            }
         }
     }
     &__c-form-inner {
@@ -93,7 +138,7 @@
             display: flex;
             align-self: center;
 
-            @include mq(){
+            @include mq() {
                 flex-direction: column;
             }
         }
@@ -111,9 +156,9 @@
             font-family: $second-font-family;
             font-size: rem(15);
 
-            @include mq(){
+            @include mq() {
                 align-self: flex-start;
-
+                font-size: rem(13);
             }
         }
 
@@ -125,8 +170,9 @@
             font-family: $second-font-family;
             font-size: rem(15);
 
-            @include mq(){
+            @include mq() {
                 align-self: flex-start;
+                font-size: rem(13);
             }
         }
 
@@ -186,9 +232,10 @@
         font-family: $second-font-family;
         letter-spacing: 0.08em;
 
-        // background-color: #c9d8e2;
-        // border: 3px solid #96aab7;
-        // border-radius: 10px;
+        @include mq() {
+            font-size: 11px;
+            padding: 5px 10px;
+        }
     }
 
     .checkbox__label::before {
@@ -199,7 +246,11 @@
         height: 15px;
         background-color: #fff;
         border: 2px solid #96aab7;
-        // border-radius: 6px;
+        
+        @include mq(){
+            width: 15px;
+            height: 13px;
+        }
     }
 
     input.form__input:checked ~ .checkbox__label {
@@ -227,6 +278,14 @@
         height: 4px;
         border-bottom: 2px solid #f4f4f4;
         border-left: 2px solid #f4f4f4;
+
+        @include mq(){
+            border-bottom: 2px solid #f4f4f4;
+            border-left: 2px solid #f4f4f4;
+
+            top: 45%;
+            left: 10px;
+        }
     }
 
     // submit
@@ -236,8 +295,11 @@
 
     .submit {
         display: inline-block;
-        
-        
+
+        @include mq(){
+            display: flex;
+        }
+
         &__form {
             background-color: $base;
             font-family: $second-font-family;
@@ -245,9 +307,9 @@
             padding: 15px 85px;
             border: $base;
 
-            &:hover{
+            &:hover {
                 color: $black;
-                border:1px solid $black;
+                border: 1px solid $black;
                 background-color: $white;
                 transition: ease 0.8s;
             }

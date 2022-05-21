@@ -10,22 +10,22 @@
         margin-bottom: rem(95);
 
         @include mq() {
-            display: block;
+            flex-direction: column-reverse;
         }
-
 
         &:nth-child(even) {
             flex-direction: row-reverse;
             padding: 50px 70px;
 
-            @include mq(){
-                padding: 10px;
+            @include mq() {
+                padding: 50px 20px 50px 20px;
+                flex-direction: column-reverse;
             }
         }
         &:nth-child(odd) {
             padding-left: 120px;
 
-            @include mq(){
+            @include mq() {
                 padding-left: 0px;
             }
         }
@@ -33,6 +33,12 @@
     &__content-wrap {
         margin-bottom: rem(95);
         background-color: $bg;
+
+        @include mq() {
+            margin: 0 calc(50% - 50vw) 60px;
+            width: 100vw;
+            
+        }
     }
 
     &__content--asbest {
@@ -41,8 +47,8 @@
         align-items: center;
         margin-bottom: 32px;
 
-        @include mq(){
-        flex-direction: column-reverse;
+        @include mq() {
+            flex-direction: column-reverse;
         }
     }
 
@@ -50,9 +56,9 @@
         width: 50%;
         padding: 0 50px;
 
-        @include mq(){
+        @include mq() {
             width: 100%;
-            padding: 0 ;
+            padding: 0 15px;
         }
     }
     &__text-box--asbest,
@@ -60,9 +66,9 @@
         width: 60%;
         padding: 0 50px;
 
-        @include mq(){
+        @include mq() {
             width: 100%;
-            padding: 0 ;
+            padding: 0;
         }
     }
     &__title {
@@ -70,7 +76,7 @@
         margin-bottom: rem(32);
         letter-spacing: 0.08em;
 
-        @include mq(){
+        @include mq() {
             display: block;
             text-align: center;
         }
@@ -78,6 +84,18 @@
         h3 {
             position: relative;
             display: inline-block;
+
+            @include mq() {
+                font-size: 16px;
+                font-weight: $normal;
+
+                span {
+                    display: block;
+                    font-size: 13px;
+                    padding-bottom: 10px;
+                    padding-top: 10px;
+                }
+            }
             &::after {
                 content: "";
                 display: block;
@@ -95,15 +113,28 @@
     &__sub-title {
         margin-bottom: rem(32);
         letter-spacing: 0.05em;
-        color: $base;
         font-size: rem(18);
+
+        @include mq() {
+            font-size: 15px;
+        }
     }
+
+    &__sub-title--blue {
+        color: $base;
+    }
+
     &__text {
         font-size: rem(14);
         letter-spacing: 0.05em;
         line-height: 1.964;
+
+        @include mq() {
+            font-size: 13px;
+        }
     }
 
+    // asbest
     &__content-wrap {
         padding-bottom: 32px;
         padding-top: 62px;
@@ -130,7 +161,12 @@
         width: 90%;
         margin: 0 auto;
 
-        span{
+        @include mq() {
+            font-size: 14px;
+            text-align: start;
+        }
+
+        span {
             color: $base;
         }
 
@@ -159,9 +195,11 @@
         padding-top: 30%;
         position: relative;
 
-        @include mq(){
+        @include mq() {
             width: 100%;
             padding-top: 60%;
+            margin: 0 calc(50% - 50vw);
+            width: 100vw;
         }
 
         img {
@@ -174,11 +212,18 @@
         }
     }
 
+
+    // dioxin
     &__content--dioxin {
         background-color: $bg;
         padding-bottom: 62px;
         padding-top: 62px;
         justify-content: center;
+
+        @include mq(){
+            margin: 0 calc(50% - 50vw) 60px;
+            width: 100vw;
+        }
     }
     &__img--asbest,
     &__img--dioxin {
@@ -186,7 +231,7 @@
         padding-top: 30%;
         position: relative;
 
-        @include mq(){
+        @include mq() {
             width: 100%;
             padding-top: 60%;
         }

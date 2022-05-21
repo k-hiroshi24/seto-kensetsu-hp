@@ -1,4 +1,8 @@
 @use "global" as *;
 .l-top-service{
     margin-top: rem(120);
+
+    @include mq(){
+        margin-top: 135px;
+    }
 }

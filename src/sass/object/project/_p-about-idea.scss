@@ -19,8 +19,11 @@
         }
 
         img {
-            height: 166px;
-            object-fit: cover;
+            @include mq(){
+                height: 166px;
+                object-fit: cover;
+
+            }
         }
     }
     &__text {

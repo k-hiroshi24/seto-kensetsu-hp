@@ -6,6 +6,10 @@
 	position: relative;
 	display: inline-block;
 
+	@include mq() {
+		font-size: 11px;
+	}
+
 	&::before {
 		content: "";
 		position: absolute;
@@ -21,6 +25,7 @@
 		@include mq() {
 			width: rem(18);
 			height: rem(10);
+			top: 28%;
 		}
 	}
 

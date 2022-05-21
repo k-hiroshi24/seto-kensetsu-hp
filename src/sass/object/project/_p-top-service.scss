@@ -1,7 +1,6 @@
 @use "global" as *;
 
 .p-top-service {
-    
     &__title {
         text-align: center;
         margin-bottom: rem(30);
@@ -12,6 +11,10 @@
         margin-bottom: rem(45);
         text-align: center;
 
+        @include mq() {
+            font-size: 16px;
+            margin-bottom: 30px;
+        }
     }
     &__text {
         font-size: rem(15);
@@ -20,8 +23,11 @@
         margin-bottom: rem(45);
         text-align: center;
 
+        @include mq() {
+            font-size: 13px;
+            text-align: start;
+        }
     }
     &__cards {
-
     }
 }

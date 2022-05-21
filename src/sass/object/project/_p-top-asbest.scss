@@ -3,7 +3,7 @@
     display: flex;
     align-items: center;
 
-    @include mq(){
+    @include mq() {
         display: block;
     }
 
@@ -13,6 +13,11 @@
         width: 100%;
         position: relative;
         padding-top: 42%;
+
+        @include mq() {
+            padding-top: 50%;
+        }
+
         img {
             position: absolute;
             top: 0;
@@ -25,6 +30,10 @@
         flex: 1;
 
         padding-left: 30px;
+
+        @include mq() {
+            padding-left: 0;
+        }
     }
     &__title {
         font-size: rem(21);
@@ -33,10 +42,14 @@
         letter-spacing: 0.05em;
         position: relative;
 
-        &::before{
+        @include mq(){
+            font-size: 15px;
+        }
+
+        &::before {
             content: "";
             position: absolute;
-            background-image: url(../images/common/asbest-icon.png);
+            background-image: url(../images/common/asbest-icon_1.png);
             background-position: center;
             background-size: cover;
             background-repeat: no-repeat;
@@ -45,20 +58,33 @@
             top: -20px;
             left: 265px;
 
-            @include mq(){
-                left: 235px;
+            @include mq() {
+                left: 70vw;
+                width: 65px;
+                height: 65px;
             }
-            
         }
 
         span {
             font-size: rem(27);
+
+            @include mq(){
+                display: block;
+                font-size: 21px;
+            }
+
         }
     }
     &__text {
         font-size: rem(14);
         margin-bottom: rem(25);
         letter-spacing: 0.05em;
+        line-height: 1.8;
+
+        @include mq(){
+        font-size: rem(13);
+        
+        }
     }
     &__border-text {
         font-size: rem(15);
@@ -72,8 +98,12 @@
         margin-bottom: rem(28);
         letter-spacing: 0.05em;
 
+        @include mq(){
+            font-size: rem(13);
+            
+            }
 
-        span{
+        span {
             color: $base;
         }
 
@@ -85,8 +115,6 @@
             top: -5px;
             left: 0;
             background-color: $black;
-            
-
         }
         &::after {
             content: "";
@@ -96,8 +124,6 @@
             bottom: -5px;
             left: 0;
             background-color: $black;
-            
-
         }
     }
     &__btn {

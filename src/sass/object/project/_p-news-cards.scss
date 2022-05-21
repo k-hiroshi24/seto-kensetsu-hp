@@ -7,6 +7,7 @@
 
     @include mq() {
         display: block;
+        margin-top: 100px;
     }
 
     .p-news-card__content {
@@ -15,7 +16,7 @@
 
         @include mq() {
             &:not(:last-child) {
-                margin-bottom: 40px;
+                margin-bottom: 80px;
             }
         }
     }
@@ -36,7 +37,7 @@
     }
     &__wrap {
         flex-grow: 1;
-        display: flex;
+        // display: flex;
         flex-direction: column;
     }
     .p-news-card__meta {
@@ -48,13 +49,16 @@
         font-family: $second-font-family;
         .date {
             margin-right: rem(14);
+            @include mq() {
+                font-size: 13px;
+            }
         }
         .tag {
             font-size: rem(13);
             width: 72px;
             height: 18px;
             line-height: 18px;
-            background-color: $base;
+            background-color: #71a89b;
             text-align: center;
             color: $white;
             border-radius: 5px;
@@ -65,6 +69,9 @@
         letter-spacing: 0.16em;
         margin-bottom: rem(20);
         font-family: $second-font-family;
+        @include mq() {
+            font-size: rem(14);
+        }
     }
 
     .p-news-card__btn {
@@ -77,5 +84,10 @@
         margin-top: 85px;
         margin-bottom: 105px;
         text-align: center;
+
+        @include mq() {
+            margin-top: 80px;
+            margin-bottom: 80px;
+        }
     }
 }

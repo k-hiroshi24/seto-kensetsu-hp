@@ -15,6 +15,7 @@
 
         @include mq(){
             width: rem(90);
+            font-size: 12px;
         }
         
     }
@@ -25,6 +26,8 @@
 
         @include mq(){
         width: calc(100% - 90px);
+        font-size: 12px;
+        letter-spacing: 0.05em;
 
         }
     }

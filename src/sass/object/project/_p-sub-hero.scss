@@ -1,6 +1,7 @@
 @use "global" as *;
 
 .p-sub-hero {
+    
     &__inner {
         position: relative;
     }
@@ -11,8 +12,15 @@
     &__img {
         width: 75%;
         margin-left: auto;
+        
+        @include mq() {
+            width: 85%;
+        }
 
         img {
+            height: 45vh;
+            object-fit: cover;
+
             @include mq() {
                 height: 23vh;
             }
@@ -22,8 +30,8 @@
     &__title {
         font-size: rem(64);
         position: absolute;
-        top: -3.125vh;
-        left: 13.68vw;
+        top: -6vw;
+        left: 3vw;
 
         @include mq() {
             left: 6.68vw;

@@ -36,12 +36,20 @@
         top: 10vw;
         left: 15vw;
 
+        @include mq() {
+            left: 2vw;
+        }
+
         h2 {
             writing-mode: vertical-rl;
             font-size: 2.5vw;
             font-weight: $normal;
             letter-spacing: 0.29em;
             line-height: 1.92;
+
+            @include mq() {
+                font-size: 23px;
+            }
         }
 
         span {

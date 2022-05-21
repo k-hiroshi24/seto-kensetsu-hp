@@ -11,7 +11,7 @@
         margin-bottom: rem(45);
         margin: 0 auto;
 
-        @include mq(){
+        @include mq() {
             display: block;
         }
     }
@@ -19,8 +19,9 @@
         width: 50%;
         padding-left: 10%;
 
-        @include mq(){
+        @include mq() {
             width: 100%;
+            padding-left: 0;
         }
     }
 
@@ -29,11 +30,19 @@
         background-color: $base;
         color: $white;
         padding-right: 20px;
+
+        @include mq() {
+            padding-right: 0;
+        }
     }
     &__subtitle {
         font-size: rem(13);
         margin-bottom: rem(12);
         letter-spacing: 0.07em;
+
+        @include mq() {
+            font-size: rem(11);
+        }
     }
 
     &__wrap {
@@ -55,9 +64,16 @@
 
         p {
             font-size: rem(26);
+            @include mq() {
+                font-size: rem(24);
+            }
             span {
                 font-size: rem(18);
                 padding-right: rem(12);
+
+                @include mq() {
+                    font-size: rem(16);
+                }
             }
         }
     }
@@ -66,34 +82,45 @@
         margin-bottom: rem(10);
         letter-spacing: 0.13em;
 
+        @include mq() {
+            font-size: rem(13);
+        }
+
         span {
             padding-right: rem(12);
         }
     }
+
     &__tel {
         margin-bottom: rem(10);
         letter-spacing: 0.13em;
+        .free-num {
+            font-size: 16px;
 
-        span {
-            padding-right: rem(12);
             &::before {
-                content: "";
                 display: inline-block;
+                content: "";
                 background-image: url(../images/common/white-free-tel.png);
                 background-size: contain;
                 background-position: center;
                 background-repeat: no-repeat;
-                width: 23px;
-                height: 23px;
-                position: relative;
-                left: -1px;
-                top: 5px;
+                width: 30px;
+                height: 30px;
+                margin-right: 5px;
+                vertical-align: middle;
             }
+        }
+        p {
+            font-size: 13px;
         }
     }
     &__mail {
         margin-bottom: rem(22);
         letter-spacing: 0.13em;
+
+        @include mq() {
+            font-size: rem(13);
+        }
 
         span {
             padding-right: rem(12);
@@ -103,19 +130,22 @@
     &__googlmap {
         letter-spacing: 0.13em;
         text-align: center;
+
+        @include mq() {
+            text-align: start;
+            font-size: 12px;
+        }
     }
 
     &__right {
         width: 50%;
     }
 
-
-
     &__sitemap {
         background-color: $base;
         color: $white;
 
-        @include mq(){
+        @include mq() {
             display: none;
         }
     }
@@ -207,8 +237,18 @@
         opacity: 63%;
         font-size: rem(10);
 
+        @include mq(){
+            font-size: rem(9);
+            
+            }
+
         span {
             padding-right: rem(15);
+
+            @include mq(){
+                padding-right: rem(10);
+
+            }
         }
     }
 }

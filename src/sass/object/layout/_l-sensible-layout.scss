@@ -1,0 +1,6 @@
+@use "global" as *;
+.l-sensible-layout{
+    @include mq(){
+        margin-top: 150px;
+    }
+}

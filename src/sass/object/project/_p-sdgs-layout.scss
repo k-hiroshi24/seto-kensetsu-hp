@@ -1,13 +1,9 @@
 @use "global" as *;
 .p-sdgs-layout {
-
     width: 98%;
     margin: 0 auto;
 
     &__inner {
-        @include mq() {
-            margin-top: 150px;
-        }
     }
     &__declaration {
         font-size: rem(34);
@@ -23,6 +19,8 @@
             writing-mode: revert;
             position: static;
             text-align: center;
+            font-size: 18px;
+            margin-bottom: 45px;
         }
 
         p {
@@ -42,17 +40,15 @@
             margin-bottom: 105px;
 
             @include mq() {
-                margin-bottom: 180px;
+                margin-bottom: 230px;
             }
         }
 
         &:nth-child(even) {
             flex-direction: row-reverse;
-
-            
         }
     }
-    
+
     &__img {
         display: block;
         width: 55%;
@@ -76,10 +72,16 @@
         @include mq() {
             position: absolute;
             top: 50%;
-            left: 10%;
+            left: 15%;
             width: 80%;
             padding: 20px;
+
         }
+        
+            
+            
+
+        
 
         &:nth-child(even) {
             margin-left: calc(50% - 50vw);
@@ -98,6 +100,14 @@
             }
         }
     }
+    .text-box02{
+        @include mq(){
+            left: 5%;
+        }
+    }
+
+
+
     &__title {
         margin-bottom: 25px;
         text-align: center;
