@@ -3,6 +3,7 @@
     padding-top: 23vw;
     background-color: $bg;
     margin-top: -95px;
+    padding-bottom: 100px;
 
     @include mq() {
         margin-top: 300px;
@@ -25,12 +26,11 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        
-        
+
         @include mq() {
             flex: none;
         }
-        
+
         h2 {
             font-size: rem(41);
             font-weight: $normal;
@@ -61,18 +61,14 @@
             tr {
                 &:nth-child(even) {
                     background-color: rgba(255, 255, 255, 0.44);
-
                 }
-                &:nth-child(2n) th{
+                &:nth-child(2n) th {
                     border-left: 5px solid $bg;
+                }
 
-                    }
-                
-                
                 th,
                 td {
-                    @include mq(){
-                        
+                    @include mq() {
                         display: block;
                         text-align: left;
                         width: 100%;
@@ -86,12 +82,10 @@
                     @include mq() {
                         padding: 0 10px;
                         font-size: 13px;
-                        border-left: 5px solid rgba(255, 255, 255, .44);
+                        border-left: 5px solid rgba(255, 255, 255, 0.44);
                         margin-top: 15px;
                         margin-left: 10px;
                         width: 90%;
-
-                        
                     }
                 }
 
@@ -127,10 +121,11 @@
     &__inner02 {
     }
     &__wrap {
-        padding-left: 30px;
+        flex: 0.7;
+        padding-left: 15px;
 
-        @include mq(){
-            width: 70%;
+        @include mq() {
+        
             padding-left: 15px;
         }
 
@@ -152,18 +147,22 @@
 
     &__contents {
         display: flex;
+
         &:not(:last-child) {
             margin-bottom: 20px;
         }
         figure {
-            width: 10%;
+        flex: 0.2;
 
+
+            @include mq(md) {
+                
+            }
 
             @include mq() {
-                width: 30%;
+                flex: 0.3;
             }
             image {
-    
             }
         }
     }
@@ -184,7 +183,7 @@
             width: 17px;
             height: 17px;
 
-            @include mq(){
+            @include mq() {
                 top: 0;
             }
         }

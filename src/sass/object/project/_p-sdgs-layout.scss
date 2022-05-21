@@ -14,6 +14,13 @@
         position: relative;
         bottom: -10vw;
         left: 80vw;
+        height: 250px;
+
+        @include mq(md) {
+            font-size: rem(24);
+            height: 150px;
+
+        }
 
         @include mq() {
             writing-mode: revert;
@@ -75,13 +82,7 @@
             left: 15%;
             width: 80%;
             padding: 20px;
-
         }
-        
-            
-            
-
-        
 
         &:nth-child(even) {
             margin-left: calc(50% - 50vw);
@@ -100,13 +101,11 @@
             }
         }
     }
-    .text-box02{
-        @include mq(){
+    .text-box02 {
+        @include mq() {
             left: 5%;
         }
     }
-
-
 
     &__title {
         margin-bottom: 25px;

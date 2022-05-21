@@ -1,13 +1,15 @@
 @use "global" as *;
+
 .p-senseble-sdgs {
     &__inner {
         width: 850px;
         max-width: 100%;
         margin: 0 auto;
+        padding: 0 20px;
 
         @include mq() {
-            max-width: 90%;
-            margin: 0 auto;
+            // max-width: 80%;
+            // margin: 0 auto;
         }
     }
     &__title {
@@ -30,6 +32,10 @@
         @include mq() {
             font-size: 16px;
         }
+        .red{
+            color: rgb(224, 53, 53);
+        }
+        
     }
     &__logo {
         width: 500px;
@@ -74,17 +80,19 @@
     // sdgs-icon*4
 
     &__contents {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 85px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10%;
 
         @include mq() {
-            gap: 40px;
+            display: flex;
+            flex-direction: column;
+            
         }
     }
 
     &__content {
-        width: 45%;
+        // width: 45%;
 
         @include mq() {
             display: flex;
@@ -95,9 +103,11 @@
     &__content-icon {
         width: 162px;
         margin: 0 auto;
+        margin-bottom: 15px;
 
         @include mq() {
             flex: 0.65;
+            margin-bottom: 40px;
         }
 
         img {
@@ -116,7 +126,9 @@
         padding-bottom: 10px;
 
         @include mq() {
-            font-size: rem(13);
+            font-size: rem(12);
+        letter-spacing: 0.03em;
+
         }
     }
     &__content-text {
@@ -125,7 +137,7 @@
         line-height: 1.6;
 
         @include mq() {
-            font-size: rem(11);
+            font-size: rem(10);
         }
     }
 }

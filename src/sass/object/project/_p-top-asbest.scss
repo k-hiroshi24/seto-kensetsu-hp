@@ -3,7 +3,7 @@
     display: flex;
     align-items: center;
 
-    @include mq() {
+    @include mq(sm) {
         display: block;
     }
 
@@ -14,7 +14,7 @@
         position: relative;
         padding-top: 42%;
 
-        @include mq() {
+        @include mq(sm) {
             padding-top: 50%;
         }
 
@@ -31,7 +31,7 @@
 
         padding-left: 30px;
 
-        @include mq() {
+        @include mq(sm) {
             padding-left: 0;
         }
     }
@@ -42,7 +42,7 @@
         letter-spacing: 0.05em;
         position: relative;
 
-        @include mq(){
+        @include mq(sm){
             font-size: 15px;
         }
 
@@ -58,7 +58,7 @@
             top: -20px;
             left: 265px;
 
-            @include mq() {
+            @include mq(sm) {
                 left: 70vw;
                 width: 65px;
                 height: 65px;
@@ -68,7 +68,7 @@
         span {
             font-size: rem(27);
 
-            @include mq(){
+            @include mq(sm){
                 display: block;
                 font-size: 21px;
             }
@@ -81,7 +81,7 @@
         letter-spacing: 0.05em;
         line-height: 1.8;
 
-        @include mq(){
+        @include mq(sm){
         font-size: rem(13);
         
         }
@@ -98,7 +98,7 @@
         margin-bottom: rem(28);
         letter-spacing: 0.05em;
 
-        @include mq(){
+        @include mq(sm){
             font-size: rem(13);
             
             }

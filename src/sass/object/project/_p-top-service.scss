@@ -11,7 +11,7 @@
         margin-bottom: rem(45);
         text-align: center;
 
-        @include mq() {
+        @include mq(sm) {
             font-size: 16px;
             margin-bottom: 30px;
         }
@@ -23,7 +23,7 @@
         margin-bottom: rem(45);
         text-align: center;
 
-        @include mq() {
+        @include mq(sm) {
             font-size: 13px;
             text-align: start;
         }

@@ -62,7 +62,7 @@ $mediaquerys: (
 );
 
 // @include mq(){}で書くとブレークポイントが反映される（初期値はmd）
-@mixin mq($mediaquery: md) {
+@mixin mq($mediaquery: sm) {
   @media #{map-get($mediaquerys, $mediaquery)} {
     @content;
   }
@@ -80,14 +80,14 @@ $mediaquerys: (
 //768px以上を表示
 .u-desktop {
   display: none;
-  @include mq("md") {
+  @include mq("sm") {
     display: block;
   }
 }
 
 //モバイルのみ表示
 .u-mobile {
-  @include mq("md") {
+  @include mq("sm") {
     display: none;
   }
 }

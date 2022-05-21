@@ -2,7 +2,7 @@
 .l-top-service{
     margin-top: rem(120);
 
-    @include mq(){
+    @include mq(sm){
         margin-top: 135px;
     }
 }
