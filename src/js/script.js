@@ -108,6 +108,22 @@ var swiper2 = new Swiper(".mySwiper2", {
   },
 });
 
+// ドロワー
+jQuery('.js-header-drawer__icon').on('click', function (e) {
+	e.preventDefault();
+	// alert('test');
+	jQuery('.js-header-drawer__icon').toggleClass('is_active');
+	jQuery('.js-header-drawer__content').toggleClass('is_active');
+	// jQuery('.drawer_bg').toggleClass('is_active');
+	return false;
+});
+jQuery(".drawer__content_item a").on("click", function () {
+	// alert('test');
+
+	jQuery(".js-header-drawer__content,.js-header-drawer__icon").removeClass('is_active');
+});
+	
+
 
 // service-tab
 // (() => {

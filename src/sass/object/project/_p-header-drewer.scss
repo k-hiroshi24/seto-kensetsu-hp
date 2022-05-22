@@ -1,0 +1,155 @@
+@use "global" as *;
+// drawer__menu
+.p-header-drawer__icon {
+    position: fixed;
+    top: rem(24.5);
+    right: rem(15);
+    z-index: 1001;
+    transition: transform 0.5s ease 0s;
+    display: none;
+
+    @include mq(md) {
+        display: block;
+    }
+
+    // ハンバーガーメニューをクリック時のアクション
+    &.is_active {
+        .icon__bar1 {
+            transform: rotate(-45deg);
+            top: rem(8);
+            background-color: #fff;
+            transition: transform 0.5s ease 0s;
+        }
+        .icon__bar2 {
+            display: none;
+        }
+
+        .icon__bar3 {
+            transform: rotate(45deg);
+            top: rem(8);
+            background-color: #fff;
+            transition: transform 0.5s ease 0s;
+        }
+    }
+}
+
+// 通常のハンバーガーメニュー
+.p-heder-drawer_icon-bars {
+    width: rem(34);
+    height: rem(16);
+    display: block;
+    position: relative;
+}
+.icon__bar1,
+.icon__bar2,
+.icon__bar3 {
+    position: absolute;
+    display: block;
+    width: rem(34);
+    height: rem(3);
+    background: $base;
+    top: 0;
+    left: 0;
+}
+.icon__bar1 {
+    top: 0;
+}
+.icon__bar2 {
+    top: rem(8);
+}
+.icon__bar3 {
+    top: rem(16);
+}
+
+//ハンバーガーメニュークリック時に現れるメニュー
+
+.p-header-drawer__content {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: 0%;
+    background-color: $base;
+    z-index: 1000;
+    transform: translateX(105%);
+    transition: transform 0.5s ease 0s;
+    padding:20px;
+    display: none;
+
+
+
+    @include mq(md) {
+        display: block;
+    }
+
+    &.is_active {
+        transform: translateX(0);
+    }
+
+    .p-header-drawer__logo-wrap {
+        display: flex;
+        align-items: center;
+        margin-bottom: 30px;
+
+        .p-top-header__logo {
+            width: 50px;
+        }
+        .p-top-header__company-name {
+            font-family: $second-font-family;
+            letter-spacing: 0.08em;
+
+            p {
+                color: $white;
+                font-size: 20px;
+            }
+            span {
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+.p-header-drawer__content_items {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: rem(15);
+    font-weight: $normal;
+}
+.drawer__content_item {
+    padding-bottom: rem(20);
+    letter-spacing: 0.05em;
+    line-height: 1.8;
+
+    ul {
+        font-size: 13px;
+        li {
+            padding-left: 40px;
+            a {
+            }
+        }
+    }
+}
+
+.p-header-drawer {
+    &__info {
+        letter-spacing: 0.08em;
+        color: $white;
+        padding: 15px 10px 10px 10px;
+        border-top: 1px solid rgba(255, 255, 255, 0.5);
+    }
+    &__co-name {
+        font-size: 20px;
+        font-weight: $bold;
+        font-family: $second-font-family;
+        span {
+            font-size: 16px;
+            padding-right: 10px;
+        }
+    }
+    &__adress {
+        color: rgba(255, 255, 255, 0.8);
+        font-size: 13px;
+    }
+    &__tel {
+        font-size: 24px;
+    }
+}
