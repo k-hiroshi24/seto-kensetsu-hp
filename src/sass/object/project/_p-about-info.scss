@@ -175,13 +175,15 @@
         &::before {
             content: "";
             position: absolute;
-            top: 5px;
+            top: 50%;
             left: -20px;
+            transform: translateY(-50%);
             background-image: url(../images/common/black-free-tel.png);
             background-repeat: no-repeat;
             background-size: contain;
             width: 17px;
             height: 17px;
+            vertical-align: middle;
 
             @include mq() {
                 top: 0;

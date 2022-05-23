@@ -11,6 +11,13 @@
     .p-works-card__content {
         display: flex;
         flex-direction: column;
+
+        @include mq(){
+            &:not(:last-child){
+                margin-bottom: 30px;
+            
+            }
+        }
     }
 
     .p-works-card__img {

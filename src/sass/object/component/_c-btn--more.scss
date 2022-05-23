@@ -19,7 +19,8 @@
 		background-size: contain;
 		width: rem(35);
 		height: rem(15);
-		top: 20%;
+		top: 50%;
+		transform: translateY(-50%);
 		right: -36px;
 
 		@include mq() {

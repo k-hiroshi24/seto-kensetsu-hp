@@ -1,5 +1,5 @@
-
-// jQuery(function ($) { // この中であればWordpressでも「$」が使用可能になる
+'ues strict';
+jQuery(function ($) { // この中であればWordpressでも「$」が使用可能になる
 
 //   var topBtn = $('.page-top');
 //   topBtn.hide();
@@ -49,15 +49,10 @@
 //     return false;
 //   });
 
-
-
-// });
-
-
 //トップに戻るボタン スクロール検知
 jQuery(window).on("scroll", function () {
   // トップから100px以上スクロールしたら
-  if (100 < jQuery(this).scrollTop()) {
+  if (600 < jQuery(this).scrollTop()) {
     // is-showクラスをつける
     jQuery(".js-to_top").addClass("is-show");
   } else {
@@ -123,6 +118,289 @@ jQuery(".drawer__content_item a").on("click", function () {
 	jQuery(".js-header-drawer__content,.js-header-drawer__icon").removeClass('is_active');
 });
 	
+
+////////////////////////////
+// gsapアニメーション(top)
+////////////////////////////
+const tl = gsap.timeline();
+
+tl.fromTo('.js-mv-slider',{  //スライダー
+  opacity:0
+  
+},{
+  duration:1.5,
+  opacity:1,
+  ease:"power1.out",
+  delay:1.2,
+
+}).fromTo('.js-mv-title',{  //メインビュータイトル
+  y:'10%',
+  opacity:0
+  
+},{
+  y:0,
+  duration:1.5,
+  opacity:1,
+  ease:"power1.out",
+
+}).fromTo('.js-recruit-title',{ //リクルート
+  opacity:0
+  
+},{
+  duration:1,
+  opacity:1,
+  ease:"power1.out",
+  delay:1.2,
+})
+
+// about
+gsap.fromTo('.js-top-about__content',{
+  y:'10%',
+  opacity:0
+},{
+  y:0,
+  duration:1.5,
+  opacity:1,
+  ease:"power1.out",
+  delay: 1,
+  scrollTrigger:{
+    trigger:'.js-top-about',
+    start:'top center',
+    markers:true,
+  }
+})
+gsap.fromTo('.js-top-about__img',{
+  y:'10%',
+  opacity:0
+},{
+  y:0,
+  duration:1.5,
+  opacity:1,
+  ease:"power1.out",
+
+  scrollTrigger:{
+    trigger:'.js-top-about',
+    start:'top center',
+    markers:true,
+  }
+})
+
+
+// service
+gsap.fromTo('.js-service-animation',{
+  y:'10%',
+  opacity:0
+},{
+  y:0,
+  duration:1.5,
+  opacity:1,
+  ease:"power1.out",
+
+  scrollTrigger:{
+    trigger:'.js-top-service',
+    start:'top center',
+    markers:true,
+  }
+})
+gsap.fromTo('.js-top-service-card',{
+  y:'10%',
+  opacity:0
+},{
+  y:0,
+  duration:1.5,
+  opacity:1,
+  ease:"power1.out",
+  stagger: {
+    from: "start", //左側から
+    amount: 0.8}, // 0.8秒おきに
+  scrollTrigger:{
+    trigger:'.js-top-service-cards',
+    start:'top center',
+    markers:true,
+  }
+})
+
+// asbest
+gsap.fromTo('.js-top-asbest__text-box',{
+  y:'10%',
+  opacity:0
+},{
+  y:0,
+  duration:1.5,
+  opacity:1,
+  ease:"power1.out",
+  delay: 1,
+  scrollTrigger:{
+    trigger:'.js-top-asbest',
+    start:'top center',
+    markers:true,
+  }
+});
+gsap.fromTo('.js-top-asbest__img',{
+  y:'10%',
+  opacity:0
+},{
+  y:0,
+  duration:1.5,
+  opacity:1,
+  ease:"power1.out",
+  scrollTrigger:{
+    trigger:'.js-top-asbest',
+    start:'top center',
+    markers:true,
+  }
+});
+
+// sensible
+gsap.fromTo('.p-top-sensible__wrap',{
+  y:'10%',
+  opacity:0
+},{
+  y:0,
+  duration:1.5,
+  opacity:1,
+  ease:"power1.out",
+
+  scrollTrigger:{
+    trigger:'.p-top-sensible',
+    start:'top center',
+    markers:true,
+  }
+})
+gsap.fromTo('.js-top-sensible-content',{
+  y:'10%',
+  opacity:0
+},{
+  y:0,
+  duration:1.5,
+  opacity:1,
+  ease:"power1.out",
+  stagger: {
+    from: "start", //左側から
+    amount: 0.8}, // 0.8秒おきに
+  scrollTrigger:{
+    trigger:'.js-top-sensible-contents',
+    start:'top center',
+    markers:true,
+  }
+})
+// works
+gsap.fromTo('.p-top-works__wrap',{
+  y:'10%',
+  opacity:0
+},{
+  y:0,
+  duration:1.5,
+  opacity:1,
+  ease:"power1.out",
+
+  scrollTrigger:{
+    trigger:'.js-top-works',
+    start:'top center',
+    markers:true,
+  }
+})
+gsap.fromTo('.js-works-card__content',{
+  y:'10%',
+  opacity:0
+},{
+  y:0,
+  duration:1.5,
+  opacity:1,
+  ease:"power1.out",
+  stagger: {
+    from: "start", //左側から
+    amount: 0.8}, // 0.8秒おきに
+  scrollTrigger:{
+    trigger:'.js-works-cards',
+    start:'top center',
+    markers:true,
+  }
+})
+
+// news
+gsap.fromTo('.js-top-news__title',{
+  y:'10%',
+  opacity:0
+},{
+  y:0,
+  duration:1.5,
+  opacity:1,
+  ease:"power1.out",
+
+  scrollTrigger:{
+    trigger:'.js-top-news',
+    start:'top center',
+    markers:true,
+  }
+})
+gsap.fromTo('.js-top-news__items',{
+
+  opacity:0
+},{
+  duration:1,
+  opacity:1,
+  delay: 1,
+  ease:"power1.out",
+  scrollTrigger:{
+    trigger:'.js-top-news',
+    start:'top center',
+    markers:true,
+  }
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+});
+
+
+
+
 
 
 // service-tab

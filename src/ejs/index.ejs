@@ -2,65 +2,49 @@
 <html lang="ja">
 <%- include('./common/_head') %>
 
-<body>
-<main>
+  <body>
+    <main>
 
-<!-- header -->
-<header>
-  <%- include('./common/_top-header') %>
-</header>
+      <!-- header -->
+      <header>
+        <%- include('./common/_top-header') %>
+      </header>
+      <!-- mn -->
+      <div class="l-mv">
+        <%- include('./project/_p-mv') %>
+      </div>
 
-<div class="l-mv">
-  <%- include('./project/_p-mv') %>
-</div>
 
- 
-
-  <section class="l-top-about">
-    <%- include('./project/_p-top-about') %>
-  </section>
-  
-  <section class="l-top-service">
-    <%- include('./project/_p-top-service') %>
-    
-    <div class="l-top-asbest">
-      <%- include('./project/_p-top-asbest') %>
-    </div>
-  </section>
-    
-  <section class="l-top-sensible">
-    <%- include('./project/_p-top-sensible') %>
-  </section>
-  
-  <section class="l-top-works">
-    <%- include('./project/_p-top-works') %>
-  </section>
-  
-  <section class="l-top-news">
-    <%- include('./project/_p-top-news') %>
-  </section>
-  
-</main>
-
-<!-- footer -->
-  <footer class="l-footer">
-    <%- include('./project/_p-banner') %>
-    <%- include('./common/_footer') %>
-    <%- include('./component/_c-to-top') %>
-  </footer>
-  
+      <!-- about -->
+      <section class="l-top-about js-top-about">
+        <%- include('./project/_p-top-about') %>
+      </section>
+      <!-- service -->
+      <section class="l-top-service js-top-service ">
+        <%- include('./project/_p-top-service') %>
+          <div class="l-top-asbest">
+            <%- include('./project/_p-top-asbest') %>
+          </div>
+      </section>
+      <!-- sensib -->
+      <section class="l-top-sensible js-top-sensible">
+        <%- include('./project/_p-top-sensible') %>
+      </section>
+      <!-- works -->
+      <section class="l-top-works js-top-works">
+        <%- include('./project/_p-top-works') %>
+      </section>
+      <!-- news -->
+      <section class="l-top-news js-top-news ">
+        <%- include('./project/_p-top-news') %>
+      </section>
+    </main>
+    <!-- footer -->
+    <footer class="l-footer">
+      <%- include('./project/_p-banner') %>
+        <%- include('./common/_footer') %>
+          <%- include('./component/_c-to-top') %>
+    </footer>
   </body>
-  </html>
- 
 
-
-
-
-
-    
-    
-    
-    
-    
-
-
+</html>

@@ -1,8 +1,8 @@
 @use "global" as *;
-.c-to-top-btn{
+.c-to-top-btn {
     background-color: $base;
     width: rem(60);
-    height:rem(60);
+    height: rem(60);
     border-radius: 50%;
     position: fixed;
     bottom: rem(200);
@@ -11,10 +11,15 @@
     transition: all 0.8s ease 0s;
     z-index: 999;
 
+    @include mq() {
+        width: rem(40);
+        height: rem(40);
+        right: rem(10);
+    }
+
     &.is-show {
         opacity: 1;
     }
-    img{
-
+    img {
     }
 }

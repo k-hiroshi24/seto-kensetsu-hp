@@ -1,5 +1,6 @@
 @use "global" as *;
-// drawer__menu
+
+// ハンバーガーメニューアイコン
 .p-header-drawer__icon {
     position: fixed;
     top: rem(24.5);
@@ -35,7 +36,7 @@
 
 // 通常のハンバーガーメニュー
 .p-heder-drawer_icon-bars {
-    width: rem(34);
+    width: rem(32);
     height: rem(16);
     display: block;
     position: relative;
@@ -46,7 +47,7 @@
     position: absolute;
     display: block;
     width: rem(34);
-    height: rem(3);
+    height: rem(2);
     background: $base;
     top: 0;
     left: 0;
@@ -64,7 +65,7 @@
 //ハンバーガーメニュークリック時に現れるメニュー
 
 .p-header-drawer__content {
-    width: 100%;
+    width: 50%;
     height: 100%;
     position: fixed;
     top: 0;
@@ -78,10 +79,13 @@
 
 
 
+    @include mq() {
+        display: block;
+        width: 100%;
+    }
     @include mq(md) {
         display: block;
     }
-
     &.is_active {
         transform: translateX(0);
     }
