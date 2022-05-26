@@ -6,7 +6,7 @@
     padding-bottom: 100px;
 
     @include mq() {
-        margin-top: 300px;
+        margin-top: 360px;
         padding-bottom: 95px;
     }
 
@@ -38,9 +38,9 @@
             @include mq() {
                 font-size: rem(24);
                 position: relative;
-                top: -90px;
+                top: -65px;
                 right: -76vw;
-                height: 140px;
+                height: 150px;
             }
         }
     }

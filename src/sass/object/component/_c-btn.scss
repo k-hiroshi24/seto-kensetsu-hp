@@ -19,17 +19,16 @@
     transition: all .8s;
     
     &:hover:after{
-    background-image: url(/images/common/btn-arrow-type02.png);
+    background-image: url(../images/common/btn-arrow.png);
     right: rem(5);
     transition: all .8s;
 
     }
   }
-
   &::after{
     content: "";
     position: absolute;
-    background-image: url(/images/common/btn-arrow.png);
+    background-image: url(../images/common/btn-arrow.png);
     background-repeat: no-repeat;
     background-size: contain;
     width: rem(35);

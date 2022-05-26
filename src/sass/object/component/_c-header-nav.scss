@@ -3,6 +3,7 @@
 .c-header-nav {
     ul {
         display: flex;
+        flex-wrap: wrap;
         align-items: center;
         font-size: rem(12);
     }
@@ -43,7 +44,7 @@
         padding: 5px 5px 15px 5px;
         width: 60vw;
         position: absolute;
-        top: 6vh;
+        top:4vh;
         left: -40vw;
         z-index: 200;
         box-shadow: 0 0 8px gray;

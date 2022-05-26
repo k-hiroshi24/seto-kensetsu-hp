@@ -166,7 +166,7 @@ gsap.fromTo('.js-top-about__content',{
   scrollTrigger:{
     trigger:'.js-top-about',
     start:'top center',
-    markers:true,
+
   }
 })
 gsap.fromTo('.js-top-about__img',{
@@ -181,7 +181,7 @@ gsap.fromTo('.js-top-about__img',{
   scrollTrigger:{
     trigger:'.js-top-about',
     start:'top center',
-    markers:true,
+    
   }
 })
 
@@ -199,7 +199,7 @@ gsap.fromTo('.js-service-animation',{
   scrollTrigger:{
     trigger:'.js-top-service',
     start:'top center',
-    markers:true,
+    
   }
 })
 gsap.fromTo('.js-top-service-card',{
@@ -216,7 +216,7 @@ gsap.fromTo('.js-top-service-card',{
   scrollTrigger:{
     trigger:'.js-top-service-cards',
     start:'top center',
-    markers:true,
+
   }
 })
 
@@ -233,7 +233,7 @@ gsap.fromTo('.js-top-asbest__text-box',{
   scrollTrigger:{
     trigger:'.js-top-asbest',
     start:'top center',
-    markers:true,
+  
   }
 });
 gsap.fromTo('.js-top-asbest__img',{
@@ -247,7 +247,7 @@ gsap.fromTo('.js-top-asbest__img',{
   scrollTrigger:{
     trigger:'.js-top-asbest',
     start:'top center',
-    markers:true,
+  
   }
 });
 
@@ -264,7 +264,7 @@ gsap.fromTo('.p-top-sensible__wrap',{
   scrollTrigger:{
     trigger:'.p-top-sensible',
     start:'top center',
-    markers:true,
+  
   }
 })
 gsap.fromTo('.js-top-sensible-content',{
@@ -281,7 +281,7 @@ gsap.fromTo('.js-top-sensible-content',{
   scrollTrigger:{
     trigger:'.js-top-sensible-contents',
     start:'top center',
-    markers:true,
+    
   }
 })
 // works
@@ -297,7 +297,7 @@ gsap.fromTo('.p-top-works__wrap',{
   scrollTrigger:{
     trigger:'.js-top-works',
     start:'top center',
-    markers:true,
+   
   }
 })
 gsap.fromTo('.js-works-card__content',{
@@ -314,7 +314,7 @@ gsap.fromTo('.js-works-card__content',{
   scrollTrigger:{
     trigger:'.js-works-cards',
     start:'top center',
-    markers:true,
+    
   }
 })
 
@@ -331,7 +331,7 @@ gsap.fromTo('.js-top-news__title',{
   scrollTrigger:{
     trigger:'.js-top-news',
     start:'top center',
-    markers:true,
+    
   }
 })
 gsap.fromTo('.js-top-news__items',{
@@ -345,15 +345,225 @@ gsap.fromTo('.js-top-news__items',{
   scrollTrigger:{
     trigger:'.js-top-news',
     start:'top center',
-    markers:true,
+
   }
 })
+//////////////////////////////////
+//gsap(sub-head)
+//////////////////////////////////
+gsap.fromTo('.js-sub-head',{
+  y:'10%',
+  opacity:0
+},{
+  y:0,
+  duration:1,
+  opacity:1,
+  delay: 2,
+  ease:"power1.out",
+  // scrollTrigger:{
+  //   trigger:'.js-top-news',
+  //   start:'top center',
+  //   markers:true,
+  // }
+})
 
+gsap.fromTo('.js-sub-hero',{
+  y:'10%',
+  opacity:0
+},{
+  y:0,
+  duration:1,
+  opacity:1,
+  delay: 1,
+  ease:"power1.out",
 
+})
+//////////////////////////////////
+//gsap(about-title.service-title)
+//////////////////////////////////
+gsap.fromTo('.js-title',{
+  x:'-30%',
+  opacity:0
+},{
+  x:0,
+  duration:1.5,
+  opacity:1,
+  // delay: 1,
+  ease:"power1.out",
 
+})
 
+///////////////////////////////////
+gsap.fromTo(".js-service__img",
+  {
+    yPercent: 20,
+  },
+  {
+    yPercent: -20,
+    ease: "none",
+    scrollTrigger: {
+      trigger: '.js-service__img',
+      start: "top bottom",
+      end: "bottom top",
+      scrub: true, //動作を遅らせる
+      // markers:true,
+    },
+  }
+);
+gsap.fromTo(".js-service__text-box",
+  {
+    x:'-50',
+    opacity:0
+  },
+  {
+    x:0,
+    opacity:1,
+    ease: "none",
+    scrollTrigger: {
+      trigger: '.js-service__text-box',
+      start: "top center",
+      // scrub: true, //動作を遅らせる
+      markers:true,
+    },
+  }
+);
+////////////////////////////////////////////
+gsap.fromTo(".js-service__img02",
+  {
+    yPercent: 20,
+  },
+  {
+    yPercent: -20,
+    ease: "none",
+    scrollTrigger: {
+      trigger: '.js-service__img02',
+      start: "top bottom",
+      end: "bottom top",
+      scrub: 1, //動作を遅らせる
+      // markers:true,
+    },
+  }
+);
 
-
+gsap.fromTo(".js-service__text-box02",
+  {
+    x:'50',
+    opacity:0
+  },
+  {
+    x:0,
+    opacity:1,
+    ease: "none",
+    scrollTrigger: {
+      trigger: '.js-service__text-box02',
+      start: "top center",
+      // scrub: true, //動作を遅らせる
+      markers:true,
+    },
+  }
+);
+////////////////////////////////////////
+gsap.fromTo(".js-service__img03",
+  {
+    yPercent: 20,
+  },
+  {
+    yPercent: -20,
+    ease: "none",
+    scrollTrigger: {
+      trigger: '.js-service__img03',
+      start: "top bottom",
+      end: "bottom top",
+      scrub: 1, //動作を遅らせる
+      // markers:true,
+    },
+  }
+);
+gsap.fromTo(".js-service__text-box03",
+  {
+    x:'-50',
+    opacity:0
+  },
+  {
+    x:0,
+    opacity:1,
+    ease: "none",
+    scrollTrigger: {
+      trigger: '.js-service__text-box03',
+      start: "top center",
+      // scrub: true, //動作を遅らせる
+      markers:true,
+    },
+  }
+);
+////////////////////////////////////////
+gsap.fromTo(".js-service__img04",
+  {
+    yPercent: 20,
+  },
+  {
+    yPercent: -20,
+    ease: "none",
+    scrollTrigger: {
+      trigger: '.js-service__img04',
+      start: "top bottom",
+      end: "bottom top",
+      scrub: 1, //動作を遅らせる
+      // markers:true,
+    },
+  }
+);
+gsap.fromTo(".js-service__text-box04",
+  {
+    x:'50',
+    opacity:0
+  },
+  {
+    x:0,
+    opacity:1,
+    ease: "none",
+    scrollTrigger: {
+      trigger: '.js-service__text-box04',
+      start: "top center",
+      // scrub: true, //動作を遅らせる
+      markers:true,
+    },
+  }
+);
+/////////////////////////////////////////
+gsap.fromTo(".js-service__img05",
+  {
+    yPercent: 20,
+  },
+  {
+    yPercent: -20,
+    ease: "none",
+    scrollTrigger: {
+      trigger: '.js-service__img05',
+      start: "top bottom",
+      end: "bottom top",
+      scrub: 1, //動作を遅らせる
+      // markers:true,
+    },
+  }
+);
+gsap.fromTo(".js-service__text-box05",
+  {
+    x:'-50',
+    opacity:0
+  },
+  {
+    x:0,
+    opacity:1,
+    ease: "none",
+    scrollTrigger: {
+      trigger: '.js-service__text-box05',
+      start: "top center",
+      // scrub: true, //動作を遅らせる
+      markers:true,
+    },
+  }
+);
 
 
 

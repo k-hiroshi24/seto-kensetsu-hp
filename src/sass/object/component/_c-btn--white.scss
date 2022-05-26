@@ -18,7 +18,7 @@
     background-color: $base;
 
     &:hover:after{
-    background-image: url(/images/common/btn-arrow-type02.png);
+    background-image: url(../images/common/btn-arrow-type02.png);
     right: rem(5);
     transition: ease .8s;
 
@@ -29,7 +29,7 @@
   &::after{
     content: "";
     position: absolute;
-    background-image: url(/images/common/btn-arrow-type02.png);
+    background-image: url(../images/common/btn-arrow-type02.png);
     background-repeat: no-repeat;
     background-size: contain;
     width: rem(35);

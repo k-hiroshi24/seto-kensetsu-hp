@@ -1,6 +1,7 @@
 @use "global" as *;
 
 .p-mv {
+margin-top: 90px;
     &__inner {
         position: relative;
 
@@ -9,6 +10,7 @@
     }
 
     &__slider {
+
     }
 
     &__slider-img {

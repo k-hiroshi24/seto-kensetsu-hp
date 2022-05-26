@@ -19,10 +19,9 @@
         }
 
         img {
-            @include mq(){
+            @include mq() {
                 height: 166px;
                 object-fit: cover;
-
             }
         }
     }
@@ -31,10 +30,10 @@
         flex-direction: column;
         justify-content: end;
         margin-left: 30px;
-        flex: 1.1;
+        flex: 1;
         height: 380px;
         writing-mode: vertical-rl;
-      
+        padding-right: 80px;
 
         @include mq() {
             flex: none;
@@ -52,7 +51,6 @@
 
             @include mq() {
                 writing-mode: vertical-lr;
-                // height: 120px;
                 position: absolute;
                 top: -12px;
                 right: 0;
@@ -71,7 +69,7 @@
                 font-size: rem(16);
                 margin-left: 0;
                 margin-bottom: 20px;
-                margin-top: 20px;
+                margin-top: 30px;
             }
         }
         p {
@@ -88,7 +86,6 @@
             text-align: end;
             @include mq() {
                 margin-top: 45px;
-
             }
         }
     }
