@@ -297,7 +297,7 @@ gsap.fromTo('.p-top-works__wrap',{
   scrollTrigger:{
     trigger:'.js-top-works',
     start:'top center',
-   
+  
   }
 })
 gsap.fromTo('.js-works-card__content',{
@@ -423,7 +423,7 @@ gsap.fromTo(".js-service__text-box",
       trigger: '.js-service__text-box',
       start: "top center",
       // scrub: true, //動作を遅らせる
-      markers:true,
+      // markers:true,
     },
   }
 );
@@ -458,7 +458,7 @@ gsap.fromTo(".js-service__text-box02",
       trigger: '.js-service__text-box02',
       start: "top center",
       // scrub: true, //動作を遅らせる
-      markers:true,
+      // markers:true,
     },
   }
 );
@@ -492,7 +492,7 @@ gsap.fromTo(".js-service__text-box03",
       trigger: '.js-service__text-box03',
       start: "top center",
       // scrub: true, //動作を遅らせる
-      markers:true,
+      // markers:true,
     },
   }
 );
@@ -526,7 +526,7 @@ gsap.fromTo(".js-service__text-box04",
       trigger: '.js-service__text-box04',
       start: "top center",
       // scrub: true, //動作を遅らせる
-      markers:true,
+      // markers:true,
     },
   }
 );
@@ -560,10 +560,173 @@ gsap.fromTo(".js-service__text-box05",
       trigger: '.js-service__text-box05',
       start: "top center",
       // scrub: true, //動作を遅らせる
-      markers:true,
+      // markers:true,
     },
   }
 );
+
+////////////////////////////////////////
+//sensible-page
+///////////////////////////////////////
+gsap.fromTo(".js-text-box01",
+  {
+    x: "0",
+    scaleX: 0,
+    scaleY: 1,
+    opacity:0,
+  },
+  {
+    x: '0',
+  scaleX: 1,
+  opacity:1,
+    scrollTrigger: {
+      trigger: '.js-sdgs-layout__content',
+      start: "top center",
+      // scrub: true, 
+      // markers:true,
+    },
+  }
+);
+gsap.fromTo(".js-text-box02",
+  {
+    x: "0",
+    scaleX: 0,
+    scaleY: 1,
+    opacity:0,
+  },
+  {
+    x: '0',
+  scaleX: 1,
+  opacity:1,
+    scrollTrigger: {
+      trigger: '.js-sdgs-layout__content02',
+      start: "top center",
+      // scrub: true, 
+      // markers:true,
+    },
+  }
+);
+gsap.fromTo(".js-text-box03",
+  {
+    x: "0",
+    scaleX: 0,
+    scaleY: 1,
+    opacity:0,
+  },
+  {
+    x: '0',
+  scaleX: 1,
+  opacity:1,
+    scrollTrigger: {
+      trigger: '.js-sdgs-layout__content03',
+      start: "top center",
+      // scrub: true, 
+      // markers:true,
+    },
+  }
+);
+
+gsap.fromTo(".js-sdgs-wrap",
+  {
+    y:'10%',
+  opacity:0
+  },
+  {
+    y:0,
+    duration:1.5,
+    opacity:1,
+    ease:"power1.out",
+    scrollTrigger: {
+      trigger: '.js-sdgs-wrap',
+      start: "top center",
+      // scrub: true, 
+      // markers:true,
+    },
+  }
+);
+// 3つのマナーをまもります
+gsap.fromTo(".js-sdgs-layout__declaration",
+  {
+    x:'50',
+    opacity:0
+  },
+  {
+    x:0,
+    opacity:1,
+    ease: "none",
+    scrollTrigger: {
+      trigger: '.js-sdgs-layout__declaration',
+      start: "top center",
+      // scrub: true, //動作を遅らせる
+      // markers:true,
+    },
+  }
+);
+// icon
+gsap.fromTo('.js-senseble-sdgs__content-icon',{
+  y:'10%',
+  opacity:0
+},{
+  y:0,
+  duration:1.5,
+  opacity:1,
+  ease:"power1.out",
+  stagger: {
+    from: "start", //左側から
+    amount: 0.8}, // 0.8秒おきに
+  scrollTrigger:{
+    trigger:'.js-senseble-sdgs__content-icon',
+    start:'top center',
+
+  }
+})
+
+//////////////////////////////////////////
+//about-idea
+///////////////////////////////////////////
+
+gsap.fromTo('.js-about-idea-text',{  //スライダー
+  opacity:0
+  
+},{
+  duration:1.5,
+  opacity:1,
+  ease:"power1.out",
+  delay:2,
+
+})
+gsap.fromTo('.js-about-idea-text02',{  //メインビュータイトル
+  y:'10%',
+  opacity:0
+  
+},{
+  y:0,
+  duration:1.5,
+  opacity:1,
+  ease:"power1.out",
+  delay:3,
+
+
+})
+gsap.fromTo('.js-about-idea-text03',{ //リクルート
+  opacity:0
+  
+},{
+  duration:1,
+  opacity:1,
+  ease:"power1.out",
+  delay:4,
+})
+gsap.fromTo('.js-about-idea__img',{ //リクルート
+  opacity:0
+  
+},{
+  duration:1,
+  opacity:1,
+  ease:"power1.out",
+  delay:5,
+})
+
 
 
 

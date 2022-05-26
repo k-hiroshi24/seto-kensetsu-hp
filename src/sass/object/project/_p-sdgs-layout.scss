@@ -19,7 +19,6 @@
         @include mq(md) {
             font-size: rem(24);
             height: 150px;
-
         }
 
         @include mq() {
@@ -76,7 +75,8 @@
         top: 40px;
         right: -10px;
         margin-right: calc(50% - 50vw);
-        
+
+    
         @include mq() {
             position: absolute;
             top: 50%;
@@ -107,8 +107,6 @@
         background-image: url(../images/common/sensible-bg1.png);
         background-size: cover;
         background-repeat: no-repeat;
-
-        
     }
     .text-box02 {
         background-image: url(../images/common/sensible-bg2.png);
@@ -123,14 +121,13 @@
         background-image: url(../images/common/sensible-bg3.png);
         background-size: cover;
         background-repeat: no-repeat;
-
-        
     }
 
     &__title {
         margin-bottom: 25px;
         text-align: center;
         font-size: rem(27);
+        
         p {
             @include mq() {
                 font-size: 18px;
