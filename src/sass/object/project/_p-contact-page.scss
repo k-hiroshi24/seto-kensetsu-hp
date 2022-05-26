@@ -31,6 +31,8 @@
         margin-top: 50px;
         color: $base;
         margin-bottom: 25px;
+        background-color: $bg;
+        padding: 10px 0;
 
         @include mq() {
             margin-top: 40px;

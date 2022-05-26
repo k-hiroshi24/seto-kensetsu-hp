@@ -34,9 +34,12 @@
         margin-top: rem(-35);
         position: relative;
         font-family: $second-font-family;
+        font-weight: $regular;
+        font-size:rem(20);
         span {
             color: $second-color;
             font-size: rem(55);
+            font-family: $base-font-family;
         }
     }
 }

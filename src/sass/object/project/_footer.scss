@@ -81,6 +81,7 @@
     &__adress {
         margin-bottom: rem(10);
         letter-spacing: 0.13em;
+        font-size: rem(14);
 
         @include mq() {
             font-size: rem(13);
@@ -94,8 +95,12 @@
     &__tel {
         margin-bottom: rem(10);
         letter-spacing: 0.13em;
+        font-size: rem(14);
+
         .free-num {
-            font-size: 16px;
+            font-size: rem(14);
+
+
 
             &::before {
                 display: inline-block;
@@ -104,8 +109,8 @@
                 background-size: contain;
                 background-position: center;
                 background-repeat: no-repeat;
-                width: 30px;
-                height: 30px;
+                width: 25px;
+                height: 25px;
                 margin-right: 5px;
                 vertical-align: middle;
             }
@@ -117,6 +122,8 @@
     &__mail {
         margin-bottom: rem(22);
         letter-spacing: 0.13em;
+        font-size: rem(14);
+
 
         @include mq() {
             font-size: rem(13);
@@ -130,6 +137,8 @@
     &__googlmap {
         letter-spacing: 0.13em;
         text-align: center;
+        font-size: rem(14);
+
 
         @include mq() {
             text-align: start;

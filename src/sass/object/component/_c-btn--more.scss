@@ -1,10 +1,10 @@
 @use "global" as *;
 
 .c-btn--more {
-	// max-width: rem(200);
 	color: $black;
 	position: relative;
 	display: inline-block;
+	letter-spacing: 0.2em;
 
 	@include mq() {
 		font-size: 11px;
@@ -17,7 +17,7 @@
 		background-repeat: no-repeat;
 		background-position: center;
 		background-size: contain;
-		width: rem(35);
+		width: rem(20);
 		height: rem(15);
 		top: 50%;
 		transform: translateY(-50%);

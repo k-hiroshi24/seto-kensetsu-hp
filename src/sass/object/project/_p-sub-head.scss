@@ -3,11 +3,11 @@
 .p-sub-head {
     text-align: center;
     &__icon {
-        width: 70px;
-        height: 50px;
+        width: 45px;
+        height: 45px;
         text-align: center;
         display: inline-block;
-        margin-bottom: rem(24);
+        margin-bottom: rem(20);
 
         @include mq(){
             width: 30px;
@@ -20,8 +20,9 @@
         @include mq(){
             margin-bottom: 15px;
         }
-
+        
         h2 {
+            font-weight: $normal;
             font-size: rem(32);
             letter-spacing: 0.21em;
             color: $base;

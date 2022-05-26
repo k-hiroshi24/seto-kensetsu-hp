@@ -10,10 +10,11 @@
 
     // メインナビ
     &__item {
-        padding: 0 20px;
+        padding: 0 10px;
         display: block;
         transition: ease 0.8s;
-        position: relative;
+        // position: relative;
+        // left: 100px;
 
         &:not(:last-child) {
             border-right: 1px solid $black;

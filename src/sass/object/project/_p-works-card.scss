@@ -2,7 +2,7 @@
 .p-works-cards {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: rem(25);
+    gap: rem(50);
 
     @include mq() {
         display: block;
@@ -55,7 +55,7 @@
         }
     }
     .p-works-card__subtitle {
-        font-size: rem(13);
+        font-size: rem(14);
         letter-spacing: 0.16em;
         margin-bottom: rem(20);
         font-family: $second-font-family;

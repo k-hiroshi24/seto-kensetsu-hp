@@ -50,6 +50,7 @@
         justify-content: center;
         flex: 3;
         border: none;
+        letter-spacing: 0.15em;
 
         @include mq() {
             display: block;
@@ -121,28 +122,36 @@
     &__inner02 {
     }
     &__wrap {
-        flex: 0.7;
+        flex: 1;
         padding-left: 15px;
 
-        @include mq() {
-        
+        @include mq(md) {
+            // flex: 1;
             padding-left: 15px;
+        }
+        @include mq() {
+            // flex: 1;
         }
 
         p {
+            margin-bottom: 5px;
+
             @include mq() {
                 font-size: rem(13);
             }
         }
 
         span {
+            display: block;
+            font-size: rem(15);
+            margin-bottom: 5px;
             @include mq() {
                 font-size: rem(12);
             }
         }
     }
     &__btn {
-        font-size: rem(10);
+        font-size: rem(14);
     }
 
     &__contents {
@@ -152,17 +161,22 @@
             margin-bottom: 20px;
         }
         figure {
-        flex: 0.2;
-
-
-            @include mq(md) {
-                
-            }
+            width: 84px;
+            // padding-top: 17%;
+            // position: relative;
+            height: 78px;
 
             @include mq() {
-                flex: 0.3;
+                width: 86px;
+                height: 81px;
             }
-            image {
+            img {
+                // position: absolute;
+                // top: 0;
+                // left: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover; //画像を見切れさせたくない場合はcontain
             }
         }
     }

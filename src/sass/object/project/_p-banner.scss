@@ -53,8 +53,9 @@
             left: 50%;
             transform: translate(-50%,-50%);
             border: 1px solid $white;
-            padding: rem(25) rem(35);
+            padding: rem(15) rem(40);
             z-index: 2;
+            letter-spacing: 0.2em;
 
             @include mq(){
                 padding: rem(10) rem(20);

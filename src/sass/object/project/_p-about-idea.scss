@@ -11,8 +11,9 @@
         }
     }
     &__img {
-        flex: 0.9;
-        height: 380px;
+        flex: 1;
+        // height: 380px;
+        // width: 500px;
 
         @include mq() {
             width: 100%;
@@ -27,13 +28,15 @@
     }
     &__text {
         display: flex;
+        flex: 1;
         flex-direction: column;
         justify-content: end;
         margin-left: 30px;
-        flex: 1;
         height: 380px;
         writing-mode: vertical-rl;
         padding-right: 80px;
+        letter-spacing: 0.25em;
+        line-height: 1.5;
 
         @include mq() {
             flex: none;
@@ -41,6 +44,8 @@
             justify-content: flex-start;
             position: relative;
             padding-left: 15px;
+            letter-spacing: 0.05em;
+            line-height: 1.8;
         }
 
         h2 {
@@ -62,7 +67,7 @@
             font-size: rem(21);
             margin-left: 50px;
             display: block;
-            letter-spacing: 0.16em;
+            // letter-spacing: 0.16em;
 
             @include mq() {
                 // writing-mode: horizontal-tb;
@@ -74,7 +79,7 @@
         }
         p {
             font-size: rem(14);
-            letter-spacing: 0.08em;
+            // letter-spacing: 0.08em;
             line-height: 1.8;
 
             @include mq() {
@@ -85,7 +90,7 @@
         .name {
             text-align: end;
             @include mq() {
-                margin-top: 45px;
+                margin-top: 0;
             }
         }
     }

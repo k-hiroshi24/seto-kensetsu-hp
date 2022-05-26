@@ -16,12 +16,13 @@ $padding-sp: 20px;
 // フォント設定
 ////////////////////
 
-$base-font-family: "Noto Serif JP", serif;
-$second-font-family: "Noto Sans JP", sans-serif;
+$base-font-family:'Yu Mincho Light','YuMincho','Yu Mincho','游明朝体',sans-serif;
+$second-font-family:YuGothic,'Yu Gothic',sans-serif;
 // ※検証ツールでしっかり反映されているか確認する
 
 body {
   font-family: $base-font-family;
+
 }
 
 // フォントウェイト
