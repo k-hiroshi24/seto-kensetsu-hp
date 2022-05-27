@@ -1,7 +1,7 @@
 @use "global" as *;
 
 .p-mv {
-margin-top: 90px;
+    margin-top: 90px;
     &__inner {
         position: relative;
 
@@ -10,7 +10,6 @@ margin-top: 90px;
     }
 
     &__slider {
-
     }
 
     &__slider-img {
@@ -75,23 +74,30 @@ margin-top: 90px;
         }
     }
     &__recruit-en-title {
-        font-size: 2vw;
+        font-size: rem(36);
         color: $base;
         margin-bottom: rem(15);
         position: relative;
+        display: inline-block;
+        // padding-right: 30px;
 
-        &::before {
-            content: "";
-            position: absolute;
-            width: 85%;
-            height: 1px;
-            background-color: $black;
-            top: 50%;
-            left: 105px;
+        @include mq() {
+            font-size: rem(24);
+        }
 
-            @include mq() {
-                width: 70%;
-                left: 50px;
+        span {
+            display: block;
+            padding-right: 15px;
+            &::before {
+                content: "";
+                position: absolute;
+                top: 50%;
+                left: 100%;
+                display: inline-block;
+                width: 160%;
+                height: 1px;
+                background-color: black;
+
             }
         }
     }

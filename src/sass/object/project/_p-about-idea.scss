@@ -11,14 +11,11 @@
         }
     }
     &__img {
-        flex: 1;
-        // height: 380px;
-        // width: 500px;
+        flex: 1.5;
 
-        @include mq() {
+        @include mq(lg) {
             width: 100%;
         }
-
         img {
             @include mq() {
                 height: 166px;
@@ -26,9 +23,10 @@
             }
         }
     }
+
     &__text {
+        flex: 2;
         display: flex;
-        flex: 1;
         flex-direction: column;
         justify-content: end;
         margin-left: 30px;
@@ -38,15 +36,27 @@
         letter-spacing: 0.25em;
         line-height: 1.5;
 
-        @include mq() {
-            flex: none;
+        @include mq(lg) {
             writing-mode: horizontal-tb;
-            justify-content: flex-start;
-            position: relative;
-            padding-left: 15px;
-            letter-spacing: 0.05em;
-            line-height: 1.8;
+            display: block;
+            height: auto;
+            margin-top: -10vw;
         }
+        @include mq(sm) {
+            writing-mode: horizontal-tb;
+            display: block;
+            height: auto;
+            margin-top: -80px;
+        }
+        // @include mq() {
+        //     flex: none;
+        //     writing-mode: horizontal-tb;
+        //     justify-content: flex-start;
+        //     position: relative;
+        //     padding-left: 15px;
+        //     letter-spacing: 0.05em;
+        //     line-height: 1.8;
+        // }
 
         h2 {
             font-size: rem(41);
@@ -54,20 +64,42 @@
             margin-left: 50px;
             font-weight: $normal;
 
-            @include mq() {
+            @include mq(lg) {
+                margin-bottom: 20px;
                 writing-mode: vertical-lr;
-                position: absolute;
-                top: -12px;
-                right: 0;
-                margin-left: 0px;
-                font-size: rem(24);
+                margin-top: -10vw;
+                position: relative;
+                left: 40vw;
+                top: 10vw;
             }
+            @include mq(sm) {
+                margin-bottom: 20px;
+                writing-mode: vertical-lr;
+                margin-top: -10vw;
+                position: relative;
+                left: 67vw;
+                top: 28vw;
+                font-size: 24px;
+            }
+
+            // @include mq() {
+            //     writing-mode: vertical-lr;
+            //     position: absolute;
+            //     top: -12px;
+            //     right: 0;
+            //     margin-left: 0px;
+            //     font-size: rem(24);
+            // }
         }
         span {
             font-size: rem(21);
             margin-left: 50px;
             display: block;
             // letter-spacing: 0.16em;
+
+            @include mq(lg) {
+                margin-bottom: 20px;
+            }
 
             @include mq() {
                 // writing-mode: horizontal-tb;
@@ -79,12 +111,14 @@
         }
         p {
             font-size: rem(14);
-            // letter-spacing: 0.08em;
+            letter-spacing: 0.08em;
             line-height: 1.8;
 
-            @include mq() {
+            @include mq(sm) {
                 // writing-mode: horizontal-tb;
                 width: 90%;
+               
+
             }
         }
         .name {

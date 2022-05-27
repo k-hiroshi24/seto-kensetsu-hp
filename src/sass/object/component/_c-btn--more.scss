@@ -4,7 +4,8 @@
 	color: $black;
 	position: relative;
 	display: inline-block;
-	letter-spacing: 0.2em;
+	letter-spacing: 0.08em;
+	padding-right: 15px;
 
 	@include mq() {
 		font-size: 11px;
@@ -21,12 +22,12 @@
 		height: rem(15);
 		top: 50%;
 		transform: translateY(-50%);
-		right: -36px;
+		right: -2vw;
 
 		@include mq() {
 			width: rem(18);
 			height: rem(10);
-			top: 28%;
+
 		}
 	}
 
